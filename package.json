@@ -2,6 +2,7 @@
   "name": "seite105",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://seite105.de",
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.0",
     "react": "^17.0.2",
