@@ -1,0 +1,16 @@
+.pagespeed-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #151914;
+}
+.pagespeed-navlink {
+  display: contents;
+}
+.pagespeed-component {
+  text-decoration: none;
+}
