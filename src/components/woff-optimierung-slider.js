@@ -16,79 +16,75 @@ const WOFFOptimierungSlider = (props) => {
     >
       <div className="woff-optimierung-slider-container01">
         <div className="woff-optimierung-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="woff-optimierung-slider-container02">
-              <div className="woff-optimierung-slider-storyfortschrit">
-                <div className="woff-optimierung-slider-activ"></div>
-                <div className="woff-optimierung-slider-passiv"></div>
+          <div className="woff-optimierung-slider-container02">
+            <div className="woff-optimierung-slider-storyfortschrit">
+              <div className="woff-optimierung-slider-activ"></div>
+              <div className="woff-optimierung-slider-passiv"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="woff-optimierung-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="woff-optimierung-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="woff-optimierung-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading}</h1>
+            <div className="woff-optimierung-slider-container03">
+              <div className="woff-optimierung-slider-container04">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="woff-optimierung-slider-image"
+                />
+                <span className="woff-optimierung-slider-text1">
+                  {props.text}
+                </span>
               </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="woff-optimierung-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="woff-optimierung-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="woff-optimierung-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="woff-optimierung-slider-container03">
-                <div className="woff-optimierung-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="woff-optimierung-slider-image"
-                  />
-                  <span className="woff-optimierung-slider-text1">
-                    {props.text}
-                  </span>
-                </div>
-                <WOFF2optimierungEx1
-                  rootClassName="woff2optimierung-ex1-root-class-name1"
-                  className=""
-                ></WOFF2optimierungEx1>
+              <WOFF2optimierungEx1
+                rootClassName="woff2optimierung-ex1-root-class-name1"
+                className=""
+              ></WOFF2optimierungEx1>
+            </div>
+          </div>
+          <div className="woff-optimierung-slider-container05">
+            <div className="woff-optimierung-slider-storyfortschrit1">
+              <div className="woff-optimierung-slider-passiv1"></div>
+              <div className="woff-optimierung-slider-activ1"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="woff-optimierung-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="woff-optimierung-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="woff-optimierung-slider-container06">
+              <div className="woff-optimierung-slider-container07">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="woff-optimierung-slider-image1"
+                />
+                <span className="woff-optimierung-slider-text3">
+                  {props.text1}
+                </span>
               </div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="woff-optimierung-slider-container05">
-              <div className="woff-optimierung-slider-storyfortschrit1">
-                <div className="woff-optimierung-slider-passiv1"></div>
-                <div className="woff-optimierung-slider-activ1"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="woff-optimierung-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="woff-optimierung-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="woff-optimierung-slider-container06">
-                <div className="woff-optimierung-slider-container07">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="woff-optimierung-slider-image1"
-                  />
-                  <span className="woff-optimierung-slider-text3">
-                    {props.text1}
-                  </span>
-                </div>
-              </div>
-              <WOFF2optimierungEx2 className=""></WOFF2optimierungEx2>
-            </div>
-          )}
+            <WOFF2optimierungEx2 className=""></WOFF2optimierungEx2>
+          </div>
         </div>
       </div>
       <div className="">

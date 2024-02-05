@@ -13,248 +13,228 @@ const ServerwahlSlider = (props) => {
     <div className={`serverwahl-slider-container ${props.rootClassName} `}>
       <div className="serverwahl-slider-container01">
         <div className="serverwahl-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="serverwahl-slider-container02">
-              <div className="serverwahl-slider-storyfortschrit">
-                <div className="serverwahl-slider-activ"></div>
-                <div className="serverwahl-slider-passiv"></div>
-                <div className="serverwahl-slider-passiv01"></div>
-                <div className="serverwahl-slider-passiv02"></div>
-                <div className="serverwahl-slider-passiv03"></div>
-                <div className="serverwahl-slider-passiv04"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(6)}
-                className="serverwahl-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="serverwahl-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="serverwahl-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="serverwahl-slider-container03">
-                <div className="serverwahl-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="serverwahl-slider-image"
-                  />
-                  <span className="serverwahl-slider-text01">{props.text}</span>
-                </div>
-                <div className="serverwahl-slider-container05">
-                  <img
-                    alt={props.imageAlt4}
-                    src={props.imageSrc4}
-                    className="serverwahl-slider-image01"
-                  />
-                  <span className="serverwahl-slider-text02">
-                    {props.text1}
-                  </span>
-                </div>
-                <div className="serverwahl-slider-container06">
-                  <img
-                    alt={props.imageAlt2}
-                    src={props.imageSrc2}
-                    className="serverwahl-slider-image02"
-                  />
-                  <span className="serverwahl-slider-text03">
-                    {props.text2}
-                  </span>
-                </div>
-              </div>
+          <div className="serverwahl-slider-container02">
+            <div className="serverwahl-slider-storyfortschrit">
+              <div className="serverwahl-slider-activ"></div>
+              <div className="serverwahl-slider-passiv"></div>
+              <div className="serverwahl-slider-passiv01"></div>
+              <div className="serverwahl-slider-passiv02"></div>
+              <div className="serverwahl-slider-passiv03"></div>
+              <div className="serverwahl-slider-passiv04"></div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="serverwahl-slider-container07">
-              <div className="serverwahl-slider-storyfortschrit1">
-                <div className="serverwahl-slider-passiv05"></div>
-                <div className="serverwahl-slider-activ1"></div>
-                <div className="serverwahl-slider-passiv06"></div>
-                <div className="serverwahl-slider-passiv07"></div>
-                <div className="serverwahl-slider-passiv08"></div>
-                <div className="serverwahl-slider-passiv09"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="serverwahl-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="serverwahl-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="serverwahl-slider-container08">
-                <div className="serverwahl-slider-container09">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="serverwahl-slider-image03"
-                  />
-                  <span className="serverwahl-slider-text05">
-                    {props.text3}
-                  </span>
-                </div>
-              </div>
+            <div
+              onClick={() => setSlideNumber(6)}
+              className="serverwahl-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="serverwahl-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="serverwahl-slider-lottie-node"
+              ></Player>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="serverwahl-slider-container10">
-              <div className="serverwahl-slider-storyfortschrit2">
-                <div className="serverwahl-slider-passiv10"></div>
-                <div className="serverwahl-slider-passiv11"></div>
-                <div className="serverwahl-slider-activ2"></div>
-                <div className="serverwahl-slider-passiv12"></div>
-                <div className="serverwahl-slider-passiv13"></div>
-                <div className="serverwahl-slider-passiv14"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="serverwahl-slider-larrow2 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="serverwahl-slider-rarrow2 finger"
-              ></div>
-              <h1 className="">{props.heading11}</h1>
-              <div className="serverwahl-slider-container11">
+            <h1 className="">{props.heading}</h1>
+            <div className="serverwahl-slider-container03">
+              <div className="serverwahl-slider-container04">
                 <img
-                  alt={props.imageAlt5}
-                  src={props.imageSrc5}
-                  className="serverwahl-slider-image04"
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="serverwahl-slider-image"
                 />
-                <div className="serverwahl-slider-container12">
-                  <img
-                    alt={props.imageAlt311}
-                    src={props.imageSrc311}
-                    className="serverwahl-slider-image05"
-                  />
-                  <span className="serverwahl-slider-text07">
-                    {props.text31}
-                  </span>
-                </div>
+                <span className="serverwahl-slider-text01">{props.text}</span>
+              </div>
+              <div className="serverwahl-slider-container05">
+                <img
+                  alt={props.imageAlt4}
+                  src={props.imageSrc4}
+                  className="serverwahl-slider-image01"
+                />
+                <span className="serverwahl-slider-text02">{props.text1}</span>
+              </div>
+              <div className="serverwahl-slider-container06">
+                <img
+                  alt={props.imageAlt2}
+                  src={props.imageSrc2}
+                  className="serverwahl-slider-image02"
+                />
+                <span className="serverwahl-slider-text03">{props.text2}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 4 && (
-            <div className="serverwahl-slider-container13">
-              <div className="serverwahl-slider-storyfortschrit3">
-                <div className="serverwahl-slider-passiv15"></div>
-                <div className="serverwahl-slider-passiv16"></div>
-                <div className="serverwahl-slider-passiv17"></div>
-                <div className="serverwahl-slider-activ3"></div>
-                <div className="serverwahl-slider-passiv18"></div>
-                <div className="serverwahl-slider-passiv19"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="serverwahl-slider-larrow3 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(5)}
-                className="serverwahl-slider-rarrow3 finger"
-              ></div>
-              <h1 className="">{props.heading111}</h1>
-              <div className="serverwahl-slider-container14">
-                <div className="serverwahl-slider-container15">
-                  <img
-                    alt={props.imageAlt3111}
-                    src={props.imageSrc3111}
-                    className="serverwahl-slider-image06"
-                  />
-                  <span className="serverwahl-slider-text09">
-                    {props.text311}
-                  </span>
-                </div>
+          </div>
+          <div className="serverwahl-slider-container07">
+            <div className="serverwahl-slider-storyfortschrit1">
+              <div className="serverwahl-slider-passiv05"></div>
+              <div className="serverwahl-slider-activ1"></div>
+              <div className="serverwahl-slider-passiv06"></div>
+              <div className="serverwahl-slider-passiv07"></div>
+              <div className="serverwahl-slider-passiv08"></div>
+              <div className="serverwahl-slider-passiv09"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="serverwahl-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="serverwahl-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="serverwahl-slider-container08">
+              <div className="serverwahl-slider-container09">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="serverwahl-slider-image03"
+                />
+                <span className="serverwahl-slider-text05">{props.text3}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 5 && (
-            <div className="serverwahl-slider-container16">
-              <div className="serverwahl-slider-storyfortschrit4">
-                <div className="serverwahl-slider-passiv20"></div>
-                <div className="serverwahl-slider-passiv21"></div>
-                <div className="serverwahl-slider-passiv22"></div>
-                <div className="serverwahl-slider-passiv23"></div>
-                <div className="serverwahl-slider-activ4"></div>
-                <div className="serverwahl-slider-passiv24"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="serverwahl-slider-larrow4 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(6)}
-                className="serverwahl-slider-rarrow4 finger"
-              ></div>
-              <h1 className="">{props.heading1111}</h1>
-              <div className="serverwahl-slider-container17">
-                <div className="serverwahl-slider-container18">
-                  <img
-                    alt={props.imageAlt31111}
-                    src={props.imageSrc31111}
-                    className="serverwahl-slider-image07"
-                  />
-                  <span className="serverwahl-slider-text11">
-                    {props.text3111}
-                  </span>
-                </div>
+          </div>
+          <div className="serverwahl-slider-container10">
+            <div className="serverwahl-slider-storyfortschrit2">
+              <div className="serverwahl-slider-passiv10"></div>
+              <div className="serverwahl-slider-passiv11"></div>
+              <div className="serverwahl-slider-activ2"></div>
+              <div className="serverwahl-slider-passiv12"></div>
+              <div className="serverwahl-slider-passiv13"></div>
+              <div className="serverwahl-slider-passiv14"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="serverwahl-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="serverwahl-slider-rarrow2 finger"
+            ></div>
+            <h1 className="">{props.heading11}</h1>
+            <div className="serverwahl-slider-container11">
+              <img
+                alt={props.imageAlt5}
+                src={props.imageSrc5}
+                className="serverwahl-slider-image04"
+              />
+              <div className="serverwahl-slider-container12">
+                <img
+                  alt={props.imageAlt311}
+                  src={props.imageSrc311}
+                  className="serverwahl-slider-image05"
+                />
+                <span className="serverwahl-slider-text07">{props.text31}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 6 && (
-            <div className="serverwahl-slider-container19">
-              <div className="serverwahl-slider-storyfortschrit5">
-                <div className="serverwahl-slider-passiv25"></div>
-                <div className="serverwahl-slider-passiv26"></div>
-                <div className="serverwahl-slider-passiv27"></div>
-                <div className="serverwahl-slider-passiv28"></div>
-                <div className="serverwahl-slider-passiv29"></div>
-                <div className="serverwahl-slider-activ5"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(5)}
-                className="serverwahl-slider-larrow5 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="serverwahl-slider-rarrow5 finger"
-              ></div>
-              <h1 className="">{props.heading11111}</h1>
-              <div className="serverwahl-slider-container20">
-                <div className="serverwahl-slider-container21">
-                  <img
-                    alt={props.imageAlt311111}
-                    src={props.imageSrc311111}
-                    className="serverwahl-slider-image08"
-                  />
-                  <span className="serverwahl-slider-text13">
-                    {props.text31111}
-                  </span>
-                </div>
-                <div className="serverwahl-slider-container22">
-                  <img
-                    alt={props.imageAlt3111111}
-                    src={props.imageSrc3111111}
-                    className="serverwahl-slider-image09"
-                  />
-                  <span className="serverwahl-slider-text14">
-                    {props.text311111}
-                  </span>
-                </div>
-              </div>
-              <ServerwahlEx1 className=""></ServerwahlEx1>
+          </div>
+          <div className="serverwahl-slider-container13">
+            <div className="serverwahl-slider-storyfortschrit3">
+              <div className="serverwahl-slider-passiv15"></div>
+              <div className="serverwahl-slider-passiv16"></div>
+              <div className="serverwahl-slider-passiv17"></div>
+              <div className="serverwahl-slider-activ3"></div>
+              <div className="serverwahl-slider-passiv18"></div>
+              <div className="serverwahl-slider-passiv19"></div>
             </div>
-          )}
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="serverwahl-slider-larrow3 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="serverwahl-slider-rarrow3 finger"
+            ></div>
+            <h1 className="">{props.heading111}</h1>
+            <div className="serverwahl-slider-container14">
+              <div className="serverwahl-slider-container15">
+                <img
+                  alt={props.imageAlt3111}
+                  src={props.imageSrc3111}
+                  className="serverwahl-slider-image06"
+                />
+                <span className="serverwahl-slider-text09">
+                  {props.text311}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="serverwahl-slider-container16">
+            <div className="serverwahl-slider-storyfortschrit4">
+              <div className="serverwahl-slider-passiv20"></div>
+              <div className="serverwahl-slider-passiv21"></div>
+              <div className="serverwahl-slider-passiv22"></div>
+              <div className="serverwahl-slider-passiv23"></div>
+              <div className="serverwahl-slider-activ4"></div>
+              <div className="serverwahl-slider-passiv24"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="serverwahl-slider-larrow4 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(6)}
+              className="serverwahl-slider-rarrow4 finger"
+            ></div>
+            <h1 className="">{props.heading1111}</h1>
+            <div className="serverwahl-slider-container17">
+              <div className="serverwahl-slider-container18">
+                <img
+                  alt={props.imageAlt31111}
+                  src={props.imageSrc31111}
+                  className="serverwahl-slider-image07"
+                />
+                <span className="serverwahl-slider-text11">
+                  {props.text3111}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="serverwahl-slider-container19">
+            <div className="serverwahl-slider-storyfortschrit5">
+              <div className="serverwahl-slider-passiv25"></div>
+              <div className="serverwahl-slider-passiv26"></div>
+              <div className="serverwahl-slider-passiv27"></div>
+              <div className="serverwahl-slider-passiv28"></div>
+              <div className="serverwahl-slider-passiv29"></div>
+              <div className="serverwahl-slider-activ5"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="serverwahl-slider-larrow5 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="serverwahl-slider-rarrow5 finger"
+            ></div>
+            <h1 className="">{props.heading11111}</h1>
+            <div className="serverwahl-slider-container20">
+              <div className="serverwahl-slider-container21">
+                <img
+                  alt={props.imageAlt311111}
+                  src={props.imageSrc311111}
+                  className="serverwahl-slider-image08"
+                />
+                <span className="serverwahl-slider-text13">
+                  {props.text31111}
+                </span>
+              </div>
+              <div className="serverwahl-slider-container22">
+                <img
+                  alt={props.imageAlt3111111}
+                  src={props.imageSrc3111111}
+                  className="serverwahl-slider-image09"
+                />
+                <span className="serverwahl-slider-text14">
+                  {props.text311111}
+                </span>
+              </div>
+            </div>
+            <ServerwahlEx1 className=""></ServerwahlEx1>
+          </div>
         </div>
       </div>
       <div className="">

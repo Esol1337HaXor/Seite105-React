@@ -15,56 +15,55 @@ const HALSlider = (props) => {
     <div className={`hal-slider-container ${props.rootClassName} `}>
       <div className="hal-slider-container01">
         <div className="hal-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="hal-slider-slide-1">
-              <div className="hal-slider-storyfortschrit">
-                <div
-                  onClick={() => setSlideNumber(1)}
-                  className="hal-slider-activ"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(2)}
-                  className="hal-slider-passiv"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(3)}
-                  className="hal-slider-passiv01"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(4)}
-                  className="hal-slider-passiv02"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(5)}
-                  className="hal-slider-passiv03"
-                ></div>
-              </div>
+          <div className="hal-slider-slide-1">
+            <div className="hal-slider-storyfortschrit">
               <div
-                onClick={() => setSlideNumber(5)}
-                className="hal-slider-larrow finger"
+                onClick={() => setSlideNumber(1)}
+                className="hal-slider-activ"
               ></div>
               <div
                 onClick={() => setSlideNumber(2)}
-                className="hal-slider-rarrow finger"
+                className="hal-slider-passiv"
               ></div>
-              <div className="hal-slider-hal">
-                <div className="hal-slider-container02">
-                  <div className="hal-slider-container03">
-                    <div className="hal-slider-container04"></div>
-                  </div>
+              <div
+                onClick={() => setSlideNumber(3)}
+                className="hal-slider-passiv01"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(4)}
+                className="hal-slider-passiv02"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(5)}
+                className="hal-slider-passiv03"
+              ></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="hal-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="hal-slider-rarrow finger"
+            ></div>
+            <div className="hal-slider-hal">
+              <div className="hal-slider-container02">
+                <div className="hal-slider-container03">
+                  <div className="hal-slider-container04"></div>
                 </div>
-                <div className="hal-slider-typedjs">
-                  <div className="hal-slider-container05">
-                    <span
-                      id="animate-with-typed-js"
-                      className="hal-slider-text HAL"
-                    >
-                      I
-                    </span>
-                    <div className="">
-                      <div className="hal-slider-container07">
-                        <Script
-                          html={`<script>
+              </div>
+              <div className="hal-slider-typedjs">
+                <div className="hal-slider-container05">
+                  <span
+                    id="animate-with-typed-js"
+                    className="hal-slider-text HAL"
+                  >
+                    I
+                  </span>
+                  <div className="">
+                    <div className="hal-slider-container07">
+                      <Script
+                        html={`<script>
     var typed = new Typed('#animate-with-typed-js', {
         strings: [" Tippe rechts oder links, um in den Panelen vor- oder zurückzublättern."],
         typeSpeed: 10,
@@ -76,78 +75,76 @@ const HALSlider = (props) => {
         loop: false,
     });
 </script>`}
-                          className=""
-                        ></Script>
-                      </div>
+                        className=""
+                      ></Script>
                     </div>
                   </div>
                 </div>
               </div>
-              <Player
-                id="pointer1"
-                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                loop
-                speed="0.5"
-                autoplay
-                background="transparent"
-                className="hal-slider-lottie-node"
-              ></Player>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="hal-slider-slide-2">
-              <div className="hal-slider-storyfortschrit1">
-                <div
-                  onClick={() => setSlideNumber(1)}
-                  className="hal-slider-passiv04"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(2)}
-                  className="hal-slider-activ1"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(3)}
-                  className="hal-slider-passiv05"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(4)}
-                  className="hal-slider-passiv06"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(5)}
-                  className="hal-slider-passiv07"
-                ></div>
-              </div>
+            <Player
+              id="pointer1"
+              src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+              loop
+              speed="0.5"
+              autoplay
+              background="transparent"
+              className="hal-slider-lottie-node"
+            ></Player>
+          </div>
+          <div className="hal-slider-slide-2">
+            <div className="hal-slider-storyfortschrit1">
               <div
                 onClick={() => setSlideNumber(1)}
-                className="hal-slider-larrow1 finger"
+                className="hal-slider-passiv04"
               ></div>
-              <HALextendetcontent
-                rootClassName="ha-lextendetcontent-root-class-name1"
-                className=""
-              ></HALextendetcontent>
+              <div
+                onClick={() => setSlideNumber(2)}
+                className="hal-slider-activ1"
+              ></div>
               <div
                 onClick={() => setSlideNumber(3)}
-                className="hal-slider-rarrow1 finger"
+                className="hal-slider-passiv05"
               ></div>
-              <div className="hal-slider-hal1">
-                <div className="hal-slider-container08">
-                  <div className="hal-slider-container09">
-                    <div className="hal-slider-container10"></div>
-                  </div>
+              <div
+                onClick={() => setSlideNumber(4)}
+                className="hal-slider-passiv06"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(5)}
+                className="hal-slider-passiv07"
+              ></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="hal-slider-larrow1 finger"
+            ></div>
+            <HALextendetcontent
+              rootClassName="ha-lextendetcontent-root-class-name1"
+              className=""
+            ></HALextendetcontent>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="hal-slider-rarrow1 finger"
+            ></div>
+            <div className="hal-slider-hal1">
+              <div className="hal-slider-container08">
+                <div className="hal-slider-container09">
+                  <div className="hal-slider-container10"></div>
                 </div>
-                <div className="hal-slider-typedjs1">
-                  <div className="hal-slider-container11">
-                    <span
-                      id="animate-with-typed-js"
-                      className="hal-slider-text01 HAL"
-                    >
-                      I
-                    </span>
-                    <div className="">
-                      <div className="hal-slider-container13">
-                        <Script
-                          html={`<script>
+              </div>
+              <div className="hal-slider-typedjs1">
+                <div className="hal-slider-container11">
+                  <span
+                    id="animate-with-typed-js"
+                    className="hal-slider-text01 HAL"
+                  >
+                    I
+                  </span>
+                  <div className="">
+                    <div className="hal-slider-container13">
+                      <Script
+                        html={`<script>
     var typed = new Typed('#animate-with-typed-js', {
         strings: [" Mit dem Erweiterungsbanner können Querverweise, URLs zu anderen Seiten sowie zusätzliche Informationen ein- und ausgeklappt werden."],
         typeSpeed: 10,
@@ -159,74 +156,72 @@ const HALSlider = (props) => {
         loop: false,
     });
 </script>`}
-                          className=""
-                        ></Script>
-                      </div>
+                        className=""
+                      ></Script>
                     </div>
                   </div>
                 </div>
               </div>
-              <Player
-                id="pointer2"
-                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                loop
-                speed="0.5"
-                autoplay
-                background="transparent"
-                className="hal-slider-lottie-node1"
-              ></Player>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="hal-slider-slide-3">
-              <div className="hal-slider-storyfortschrit2">
-                <div
-                  onClick={() => setSlideNumber(1)}
-                  className="hal-slider-passiv08"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(2)}
-                  className="hal-slider-passiv09"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(3)}
-                  className="hal-slider-activ2"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(4)}
-                  className="hal-slider-passiv10"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(5)}
-                  className="hal-slider-passiv11"
-                ></div>
-              </div>
+            <Player
+              id="pointer2"
+              src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+              loop
+              speed="0.5"
+              autoplay
+              background="transparent"
+              className="hal-slider-lottie-node1"
+            ></Player>
+          </div>
+          <div className="hal-slider-slide-3">
+            <div className="hal-slider-storyfortschrit2">
+              <div
+                onClick={() => setSlideNumber(1)}
+                className="hal-slider-passiv08"
+              ></div>
               <div
                 onClick={() => setSlideNumber(2)}
-                className="hal-slider-larrow2 finger"
+                className="hal-slider-passiv09"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(3)}
+                className="hal-slider-activ2"
               ></div>
               <div
                 onClick={() => setSlideNumber(4)}
-                className="hal-slider-rarrow2 finger"
+                className="hal-slider-passiv10"
               ></div>
-              <div className="hal-slider-hal2">
-                <div className="hal-slider-container14">
-                  <div className="hal-slider-container15">
-                    <div className="hal-slider-container16"></div>
-                  </div>
+              <div
+                onClick={() => setSlideNumber(5)}
+                className="hal-slider-passiv11"
+              ></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="hal-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="hal-slider-rarrow2 finger"
+            ></div>
+            <div className="hal-slider-hal2">
+              <div className="hal-slider-container14">
+                <div className="hal-slider-container15">
+                  <div className="hal-slider-container16"></div>
                 </div>
-                <div className="hal-slider-typedjs2">
-                  <div className="hal-slider-container17">
-                    <span
-                      id="animate-with-typed-js"
-                      className="hal-slider-text02 HAL"
-                    >
-                      I
-                    </span>
-                    <div className="">
-                      <div className="hal-slider-container19">
-                        <Script
-                          html={`<script>
+              </div>
+              <div className="hal-slider-typedjs2">
+                <div className="hal-slider-container17">
+                  <span
+                    id="animate-with-typed-js"
+                    className="hal-slider-text02 HAL"
+                  >
+                    I
+                  </span>
+                  <div className="">
+                    <div className="hal-slider-container19">
+                      <Script
+                        html={`<script>
     var typed = new Typed('#animate-with-typed-js', {
         strings: [" Die verschiedenen Skalen geben Auskunft über die jeweiligen Kapitel. Die GRÜNE Skala gibt die Effektivität der Maßnahme an, je höher desto besser. Die GRAUE Skala gibt Auskunft über den Umsetzungsaufwand, je geringer, desto besser."],
         typeSpeed: 10,
@@ -238,79 +233,77 @@ const HALSlider = (props) => {
         loop: false,
     });
 </script>`}
-                          className=""
-                        ></Script>
-                      </div>
+                        className=""
+                      ></Script>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="hal-slider-container20">
-                <div className="hal-slider-container21">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="hal-slider-image"
-                  />
-                  <img
-                    alt={props.imageAlt5}
-                    src={props.imageSrc5}
-                    className="hal-slider-image1"
-                  />
-                </div>
+            </div>
+            <div className="hal-slider-container20">
+              <div className="hal-slider-container21">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="hal-slider-image"
+                />
+                <img
+                  alt={props.imageAlt5}
+                  src={props.imageSrc5}
+                  className="hal-slider-image1"
+                />
               </div>
             </div>
-          )}
-          {slideNumber === 4 && (
-            <div className="hal-slider-slide-4">
-              <div className="hal-slider-storyfortschrit3">
-                <div
-                  onClick={() => setSlideNumber(1)}
-                  className="hal-slider-passiv12"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(2)}
-                  className="hal-slider-passiv13"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(3)}
-                  className="hal-slider-passiv14"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(4)}
-                  className="hal-slider-activ3"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(5)}
-                  className="hal-slider-passiv15"
-                ></div>
-              </div>
+          </div>
+          <div className="hal-slider-slide-4">
+            <div className="hal-slider-storyfortschrit3">
+              <div
+                onClick={() => setSlideNumber(1)}
+                className="hal-slider-passiv12"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(2)}
+                className="hal-slider-passiv13"
+              ></div>
               <div
                 onClick={() => setSlideNumber(3)}
-                className="hal-slider-larrow3 finger"
+                className="hal-slider-passiv14"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(4)}
+                className="hal-slider-activ3"
               ></div>
               <div
                 onClick={() => setSlideNumber(5)}
-                className="hal-slider-rarrow3 finger"
+                className="hal-slider-passiv15"
               ></div>
-              <div className="hal-slider-hal3">
-                <div className="hal-slider-container22">
-                  <div className="hal-slider-container23">
-                    <div className="hal-slider-container24"></div>
-                  </div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="hal-slider-larrow3 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="hal-slider-rarrow3 finger"
+            ></div>
+            <div className="hal-slider-hal3">
+              <div className="hal-slider-container22">
+                <div className="hal-slider-container23">
+                  <div className="hal-slider-container24"></div>
                 </div>
-                <div className="hal-slider-typedjs3">
-                  <div className="hal-slider-container25">
-                    <span
-                      id="animate-with-typed-js"
-                      className="hal-slider-text03 HAL"
-                    >
-                      I
-                    </span>
-                    <div className="">
-                      <div className="hal-slider-container27">
-                        <Script
-                          html={`<script>
+              </div>
+              <div className="hal-slider-typedjs3">
+                <div className="hal-slider-container25">
+                  <span
+                    id="animate-with-typed-js"
+                    className="hal-slider-text03 HAL"
+                  >
+                    I
+                  </span>
+                  <div className="">
+                    <div className="hal-slider-container27">
+                      <Script
+                        html={`<script>
     var typed = new Typed('#animate-with-typed-js', {
         strings: [" Die Uhr gibt an, wie lange man zum Lesen einer Einheit braucht. GRUNDLAGEN sind Erklärungen, die gelesen werden sollten. EINFACHE Lektionen erfordern ein geringes technisches Verständnis. FORTGESCHRITTENE Lektionen sind komplexer. EXPERTEN Lektionen erfordern oft ein komplettes Umdenken im Gestaltungsprozess."],
         typeSpeed: 10,
@@ -322,81 +315,77 @@ const HALSlider = (props) => {
         loop: false,
     });
 </script>`}
-                          className=""
-                        ></Script>
-                      </div>
+                        className=""
+                      ></Script>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="hal-slider-container28">
-                <span className="hal-slider-text04 Rubrik">
-                  {props.text211}
-                </span>
-                <span className="hal-slider-text05 Rubrik">{props.text22}</span>
-                <span className="hal-slider-text06 Rubrik">{props.text2}</span>
-                <span className="hal-slider-text07 Rubrik">{props.text21}</span>
-              </div>
-              <div className="hal-slider-container29">
-                <img
-                  alt={props.imageAlt4}
-                  src={props.imageSrc4}
-                  className="hal-slider-image2"
-                />
-                <span className="hal-slider-text08">{props.text1}</span>
-              </div>
             </div>
-          )}
-          {slideNumber === 5 && (
-            <div className="hal-slider-slide-5">
-              <div className="hal-slider-storyfortschrit4">
-                <div
-                  onClick={() => setSlideNumber(1)}
-                  className="hal-slider-passiv16"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(2)}
-                  className="hal-slider-passiv17"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(3)}
-                  className="hal-slider-passiv18"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(4)}
-                  className="hal-slider-passiv19"
-                ></div>
-                <div
-                  onClick={() => setSlideNumber(5)}
-                  className="hal-slider-activ4"
-                ></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="hal-slider-larrow4 finger"
-              ></div>
+            <div className="hal-slider-container28">
+              <span className="hal-slider-text04 Rubrik">{props.text211}</span>
+              <span className="hal-slider-text05 Rubrik">{props.text22}</span>
+              <span className="hal-slider-text06 Rubrik">{props.text2}</span>
+              <span className="hal-slider-text07 Rubrik">{props.text21}</span>
+            </div>
+            <div className="hal-slider-container29">
+              <img
+                alt={props.imageAlt4}
+                src={props.imageSrc4}
+                className="hal-slider-image2"
+              />
+              <span className="hal-slider-text08">{props.text1}</span>
+            </div>
+          </div>
+          <div className="hal-slider-slide-5">
+            <div className="hal-slider-storyfortschrit4">
               <div
                 onClick={() => setSlideNumber(1)}
-                className="hal-slider-rarrow4 finger"
+                className="hal-slider-passiv16"
               ></div>
-              <div className="hal-slider-hal4">
-                <div className="hal-slider-container30">
-                  <div className="hal-slider-container31">
-                    <div className="hal-slider-container32"></div>
-                  </div>
+              <div
+                onClick={() => setSlideNumber(2)}
+                className="hal-slider-passiv17"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(3)}
+                className="hal-slider-passiv18"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(4)}
+                className="hal-slider-passiv19"
+              ></div>
+              <div
+                onClick={() => setSlideNumber(5)}
+                className="hal-slider-activ4"
+              ></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="hal-slider-larrow4 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="hal-slider-rarrow4 finger"
+            ></div>
+            <div className="hal-slider-hal4">
+              <div className="hal-slider-container30">
+                <div className="hal-slider-container31">
+                  <div className="hal-slider-container32"></div>
                 </div>
-                <div className="hal-slider-typedjs4">
-                  <div className="hal-slider-container33">
-                    <span
-                      id="animate-with-typed-js"
-                      className="hal-slider-text09 HAL"
-                    >
-                      I
-                    </span>
-                    <div className="">
-                      <div className="hal-slider-container35">
-                        <Script
-                          html={`<script>
+              </div>
+              <div className="hal-slider-typedjs4">
+                <div className="hal-slider-container33">
+                  <span
+                    id="animate-with-typed-js"
+                    className="hal-slider-text09 HAL"
+                  >
+                    I
+                  </span>
+                  <div className="">
+                    <div className="hal-slider-container35">
+                      <Script
+                        html={`<script>
     var typed = new Typed('#animate-with-typed-js', {
         strings: [" Mit dem großen Zurück-Button gelangt man immer zum vorherigen Menü und verlässt auch dieses Tutorial."],
         typeSpeed: 10,
@@ -408,30 +397,29 @@ const HALSlider = (props) => {
         loop: false,
     });
 </script>`}
-                          className=""
-                        ></Script>
-                      </div>
+                        className=""
+                      ></Script>
                     </div>
                   </div>
                 </div>
               </div>
-              <Link to="/" className="hal-slider-navlink">
-                <ABackbutton
-                  rootClassName="a-backbutton-root-class-name1"
-                  className="hal-slider-component1"
-                ></ABackbutton>
-              </Link>
-              <Player
-                id="pointer4"
-                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                loop
-                speed="0.5"
-                autoplay
-                background="transparent"
-                className="hal-slider-lottie-node2"
-              ></Player>
             </div>
-          )}
+            <Link to="/" className="hal-slider-navlink">
+              <ABackbutton
+                rootClassName="a-backbutton-root-class-name1"
+                className="hal-slider-component1"
+              ></ABackbutton>
+            </Link>
+            <Player
+              id="pointer4"
+              src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+              loop
+              speed="0.5"
+              autoplay
+              background="transparent"
+              className="hal-slider-lottie-node2"
+            ></Player>
+          </div>
         </div>
       </div>
     </div>

@@ -8,43 +8,39 @@ const AnbieterprfungEx1 = (props) => {
   const [toggle, setToggle] = useState(false)
   return (
     <div className={`anbieterprfung-ex1-container ${props.rootClassName} `}>
-      {toggle && (
-        <div
-          onClick={() => setToggle(false)}
-          className="anbieterprfung-ex1-container1"
-        >
-          <svg viewBox="0 0 1024 1024" className="anbieterprfung-ex1-icon">
-            <path
-              d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-              className=""
-            ></path>
-          </svg>
-          <div className="anbieterprfung-ex1-container2">
-            <a
-              href="https://www.websitecarbon.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="anbieterprfung-ex1-link"
-            >
-              {props.text}
-            </a>
-            <span className="anbieterprfung-ex1-text">{props.text1}</span>
-          </div>
+      <div
+        onClick={() => setToggle(false)}
+        className="anbieterprfung-ex1-container1"
+      >
+        <svg viewBox="0 0 1024 1024" className="anbieterprfung-ex1-icon">
+          <path
+            d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+            className=""
+          ></path>
+        </svg>
+        <div className="anbieterprfung-ex1-container2">
+          <a
+            href="https://www.websitecarbon.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="anbieterprfung-ex1-link"
+          >
+            {props.text}
+          </a>
+          <span className="anbieterprfung-ex1-text">{props.text1}</span>
         </div>
-      )}
-      {!toggle && (
-        <div
-          onClick={() => setToggle(!toggle)}
-          className="anbieterprfung-ex1-container3"
-        >
-          <svg viewBox="0 0 1024 1024" className="anbieterprfung-ex1-icon2">
-            <path
-              d="M658 708l-60 60-256-256 256-256 60 60-196 196z"
-              className=""
-            ></path>
-          </svg>
-        </div>
-      )}
+      </div>
+      <div
+        onClick={() => setToggle(!toggle)}
+        className="anbieterprfung-ex1-container3"
+      >
+        <svg viewBox="0 0 1024 1024" className="anbieterprfung-ex1-icon2">
+          <path
+            d="M658 708l-60 60-256-256 256-256 60 60-196 196z"
+            className=""
+          ></path>
+        </svg>
+      </div>
     </div>
   )
 }

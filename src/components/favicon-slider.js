@@ -13,104 +13,98 @@ const FaviconSlider = (props) => {
     <div className={`favicon-slider-container ${props.rootClassName} `}>
       <div className="favicon-slider-container01">
         <div className="favicon-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="favicon-slider-container02">
-              <div className="favicon-slider-storyfortschrit">
-                <div className="favicon-slider-activ"></div>
-                <div className="favicon-slider-passiv"></div>
-                <div className="favicon-slider-passiv1"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="favicon-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="favicon-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="favicon-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="favicon-slider-container03">
-                <div className="favicon-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="favicon-slider-image"
-                  />
-                  <span className="favicon-slider-text1">{props.text}</span>
-                </div>
+          <div className="favicon-slider-container02">
+            <div className="favicon-slider-storyfortschrit">
+              <div className="favicon-slider-activ"></div>
+              <div className="favicon-slider-passiv"></div>
+              <div className="favicon-slider-passiv1"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="favicon-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="favicon-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="favicon-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading}</h1>
+            <div className="favicon-slider-container03">
+              <div className="favicon-slider-container04">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="favicon-slider-image"
+                />
+                <span className="favicon-slider-text1">{props.text}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="favicon-slider-container05">
-              <div className="favicon-slider-storyfortschrit1">
-                <div className="favicon-slider-passiv2"></div>
-                <div className="favicon-slider-activ1"></div>
-                <div className="favicon-slider-passiv3"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="favicon-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="favicon-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="favicon-slider-container06">
-                <div className="favicon-slider-container07">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="favicon-slider-image1"
-                  />
-                  <span className="favicon-slider-text3">{props.text1}</span>
-                </div>
+          </div>
+          <div className="favicon-slider-container05">
+            <div className="favicon-slider-storyfortschrit1">
+              <div className="favicon-slider-passiv2"></div>
+              <div className="favicon-slider-activ1"></div>
+              <div className="favicon-slider-passiv3"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="favicon-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="favicon-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="favicon-slider-container06">
+              <div className="favicon-slider-container07">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="favicon-slider-image1"
+                />
+                <span className="favicon-slider-text3">{props.text1}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="favicon-slider-container08">
-              <div className="favicon-slider-storyfortschrit2">
-                <div className="favicon-slider-passiv4"></div>
-                <div className="favicon-slider-passiv5"></div>
-                <div className="favicon-slider-activ2"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="favicon-slider-larrow2 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="favicon-slider-rarrow2 finger"
-              ></div>
-              <h1 className="">{props.heading11}</h1>
-              <div className="favicon-slider-container09">
-                <div className="favicon-slider-container10">
-                  <img
-                    alt={props.imageAlt311}
-                    src={props.imageSrc311}
-                    className="favicon-slider-image2"
-                  />
-                  <span className="favicon-slider-text5">{props.text11}</span>
-                </div>
-                <FaviconEx1
-                  rootClassName="favicon-ex1-root-class-name2"
-                  className=""
-                ></FaviconEx1>
-              </div>
+          </div>
+          <div className="favicon-slider-container08">
+            <div className="favicon-slider-storyfortschrit2">
+              <div className="favicon-slider-passiv4"></div>
+              <div className="favicon-slider-passiv5"></div>
+              <div className="favicon-slider-activ2"></div>
             </div>
-          )}
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="favicon-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="favicon-slider-rarrow2 finger"
+            ></div>
+            <h1 className="">{props.heading11}</h1>
+            <div className="favicon-slider-container09">
+              <div className="favicon-slider-container10">
+                <img
+                  alt={props.imageAlt311}
+                  src={props.imageSrc311}
+                  className="favicon-slider-image2"
+                />
+                <span className="favicon-slider-text5">{props.text11}</span>
+              </div>
+              <FaviconEx1
+                rootClassName="favicon-ex1-root-class-name2"
+                className=""
+              ></FaviconEx1>
+            </div>
+          </div>
         </div>
       </div>
       <div className="">

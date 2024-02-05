@@ -12,190 +12,180 @@ const CDNSlider = (props) => {
     <div className={`cdn-slider-container ${props.rootClassName} `}>
       <div className="cdn-slider-container01">
         <div className="cdn-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="cdn-slider-container02">
-              <div className="cdn-slider-storyfortschrit">
-                <div className="cdn-slider-activ"></div>
-                <div className="cdn-slider-passiv"></div>
-                <div className="cdn-slider-passiv01"></div>
-                <div className="cdn-slider-passiv02"></div>
-                <div className="cdn-slider-passiv03"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="cdn-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="cdn-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="cdn-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="cdn-slider-container03">
-                <div className="cdn-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="cdn-slider-image"
-                  />
-                  <span className="cdn-slider-text01">{props.text}</span>
-                </div>
+          <div className="cdn-slider-container02">
+            <div className="cdn-slider-storyfortschrit">
+              <div className="cdn-slider-activ"></div>
+              <div className="cdn-slider-passiv"></div>
+              <div className="cdn-slider-passiv01"></div>
+              <div className="cdn-slider-passiv02"></div>
+              <div className="cdn-slider-passiv03"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="cdn-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="cdn-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="cdn-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading}</h1>
+            <div className="cdn-slider-container03">
+              <div className="cdn-slider-container04">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="cdn-slider-image"
+                />
+                <span className="cdn-slider-text01">{props.text}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="cdn-slider-container05">
-              <div className="cdn-slider-storyfortschrit1">
-                <div className="cdn-slider-passiv04"></div>
-                <div className="cdn-slider-activ1"></div>
-                <div className="cdn-slider-passiv05"></div>
-                <div className="cdn-slider-passiv06"></div>
-                <div className="cdn-slider-passiv07"></div>
+          </div>
+          <div className="cdn-slider-container05">
+            <div className="cdn-slider-storyfortschrit1">
+              <div className="cdn-slider-passiv04"></div>
+              <div className="cdn-slider-activ1"></div>
+              <div className="cdn-slider-passiv05"></div>
+              <div className="cdn-slider-passiv06"></div>
+              <div className="cdn-slider-passiv07"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="cdn-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="cdn-slider-rarrow1 finger"
+            ></div>
+            <h1 className="cdn-slider-text02">{props.heading1}</h1>
+            <div className="cdn-slider-container06">
+              <div className="cdn-slider-container07">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="cdn-slider-image1"
+                />
+                <span className="cdn-slider-text03">{props.text3}</span>
               </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="cdn-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="cdn-slider-rarrow1 finger"
-              ></div>
-              <h1 className="cdn-slider-text02">{props.heading1}</h1>
-              <div className="cdn-slider-container06">
-                <div className="cdn-slider-container07">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="cdn-slider-image1"
-                  />
-                  <span className="cdn-slider-text03">{props.text3}</span>
-                </div>
-                <div className="cdn-slider-container08">
-                  <img
-                    alt={props.imageAlt314}
-                    src={props.imageSrc314}
-                    className="cdn-slider-image2"
-                  />
-                  <span className="cdn-slider-text04">{props.text34}</span>
-                </div>
+              <div className="cdn-slider-container08">
+                <img
+                  alt={props.imageAlt314}
+                  src={props.imageSrc314}
+                  className="cdn-slider-image2"
+                />
+                <span className="cdn-slider-text04">{props.text34}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="cdn-slider-container09">
-              <div className="cdn-slider-storyfortschrit2">
-                <div className="cdn-slider-passiv08"></div>
-                <div className="cdn-slider-passiv09"></div>
-                <div className="cdn-slider-activ2"></div>
-                <div className="cdn-slider-passiv10"></div>
-                <div className="cdn-slider-passiv11"></div>
+          </div>
+          <div className="cdn-slider-container09">
+            <div className="cdn-slider-storyfortschrit2">
+              <div className="cdn-slider-passiv08"></div>
+              <div className="cdn-slider-passiv09"></div>
+              <div className="cdn-slider-activ2"></div>
+              <div className="cdn-slider-passiv10"></div>
+              <div className="cdn-slider-passiv11"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="cdn-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="cdn-slider-rarrow2 finger"
+            ></div>
+            <h1 className="cdn-slider-text05">{props.heading11}</h1>
+            <div className="cdn-slider-container10">
+              <div className="cdn-slider-container11">
+                <img
+                  alt={props.imageAlt315}
+                  src={props.imageSrc315}
+                  className="cdn-slider-image3"
+                />
+                <span className="cdn-slider-text06">{props.text35}</span>
               </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="cdn-slider-larrow2 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="cdn-slider-rarrow2 finger"
-              ></div>
-              <h1 className="cdn-slider-text05">{props.heading11}</h1>
-              <div className="cdn-slider-container10">
-                <div className="cdn-slider-container11">
-                  <img
-                    alt={props.imageAlt315}
-                    src={props.imageSrc315}
-                    className="cdn-slider-image3"
-                  />
-                  <span className="cdn-slider-text06">{props.text35}</span>
-                </div>
-                <div className="cdn-slider-container12">
-                  <img
-                    alt={props.imageAlt313}
-                    src={props.imageSrc313}
-                    className="cdn-slider-image4"
-                  />
-                  <span className="cdn-slider-text07">{props.text33}</span>
-                </div>
+              <div className="cdn-slider-container12">
+                <img
+                  alt={props.imageAlt313}
+                  src={props.imageSrc313}
+                  className="cdn-slider-image4"
+                />
+                <span className="cdn-slider-text07">{props.text33}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 4 && (
-            <div className="cdn-slider-container13">
-              <div className="cdn-slider-storyfortschrit3">
-                <div className="cdn-slider-passiv12"></div>
-                <div className="cdn-slider-passiv13"></div>
-                <div className="cdn-slider-passiv14"></div>
-                <div className="cdn-slider-activ3"></div>
-                <div className="cdn-slider-passiv15"></div>
+          </div>
+          <div className="cdn-slider-container13">
+            <div className="cdn-slider-storyfortschrit3">
+              <div className="cdn-slider-passiv12"></div>
+              <div className="cdn-slider-passiv13"></div>
+              <div className="cdn-slider-passiv14"></div>
+              <div className="cdn-slider-activ3"></div>
+              <div className="cdn-slider-passiv15"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="cdn-slider-larrow3 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="cdn-slider-rarrow3 finger"
+            ></div>
+            <h1 className="cdn-slider-text08">{props.heading112}</h1>
+            <div className="cdn-slider-container14">
+              <div className="cdn-slider-container15">
+                <img
+                  alt={props.imageAlt31412}
+                  src={props.imageSrc31412}
+                  className="cdn-slider-image5"
+                />
+                <span className="cdn-slider-text09">{props.text3412}</span>
               </div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="cdn-slider-larrow3 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(5)}
-                className="cdn-slider-rarrow3 finger"
-              ></div>
-              <h1 className="cdn-slider-text08">{props.heading112}</h1>
-              <div className="cdn-slider-container14">
-                <div className="cdn-slider-container15">
-                  <img
-                    alt={props.imageAlt31412}
-                    src={props.imageSrc31412}
-                    className="cdn-slider-image5"
-                  />
-                  <span className="cdn-slider-text09">{props.text3412}</span>
-                </div>
-                <div className="cdn-slider-container16">
-                  <img
-                    alt={props.imageAlt31312}
-                    src={props.imageSrc31312}
-                    className="cdn-slider-image6"
-                  />
-                  <span className="cdn-slider-text10">{props.text3312}</span>
-                </div>
+              <div className="cdn-slider-container16">
+                <img
+                  alt={props.imageAlt31312}
+                  src={props.imageSrc31312}
+                  className="cdn-slider-image6"
+                />
+                <span className="cdn-slider-text10">{props.text3312}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 5 && (
-            <div className="cdn-slider-container17">
-              <div className="cdn-slider-storyfortschrit4">
-                <div className="cdn-slider-passiv16"></div>
-                <div className="cdn-slider-passiv17"></div>
-                <div className="cdn-slider-passiv18"></div>
-                <div className="cdn-slider-passiv19"></div>
-                <div className="cdn-slider-activ4"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="cdn-slider-larrow4 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="cdn-slider-rarrow4 finger"
-              ></div>
-              <h1 className="">{props.heading111}</h1>
-              <div className="cdn-slider-container18">
-                <div className="cdn-slider-container19">
-                  <img
-                    alt={props.imageAlt3151}
-                    src={props.imageSrc3151}
-                    className="cdn-slider-image7"
-                  />
-                  <span className="cdn-slider-text12">{props.text351}</span>
-                </div>
+          </div>
+          <div className="cdn-slider-container17">
+            <div className="cdn-slider-storyfortschrit4">
+              <div className="cdn-slider-passiv16"></div>
+              <div className="cdn-slider-passiv17"></div>
+              <div className="cdn-slider-passiv18"></div>
+              <div className="cdn-slider-passiv19"></div>
+              <div className="cdn-slider-activ4"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="cdn-slider-larrow4 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="cdn-slider-rarrow4 finger"
+            ></div>
+            <h1 className="">{props.heading111}</h1>
+            <div className="cdn-slider-container18">
+              <div className="cdn-slider-container19">
+                <img
+                  alt={props.imageAlt3151}
+                  src={props.imageSrc3151}
+                  className="cdn-slider-image7"
+                />
+                <span className="cdn-slider-text12">{props.text351}</span>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
       <div className="">

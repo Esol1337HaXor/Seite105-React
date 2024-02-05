@@ -8,50 +8,46 @@ const WOFF2optimierungEx2 = (props) => {
   const [toggle, setToggle] = useState(false)
   return (
     <div className={`woff2optimierung-ex2-container ${props.rootClassName} `}>
-      {toggle && (
-        <div
-          onClick={() => setToggle(false)}
-          className="woff2optimierung-ex2-container1"
-        >
-          <svg viewBox="0 0 1024 1024" className="woff2optimierung-ex2-icon">
-            <path
-              d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-              className=""
-            ></path>
-          </svg>
-          <div className="woff2optimierung-ex2-container2">
-            <a
-              href="https://everythingfonts.com/subsetter"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="woff2optimierung-ex2-link"
-            >
-              {props.text3}
-            </a>
-            <a
-              href="https://fontdrop.info/#/?darkmode=true"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="woff2optimierung-ex2-link1"
-            >
-              {props.text11}
-            </a>
-          </div>
+      <div
+        onClick={() => setToggle(false)}
+        className="woff2optimierung-ex2-container1"
+      >
+        <svg viewBox="0 0 1024 1024" className="woff2optimierung-ex2-icon">
+          <path
+            d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+            className=""
+          ></path>
+        </svg>
+        <div className="woff2optimierung-ex2-container2">
+          <a
+            href="https://everythingfonts.com/subsetter"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="woff2optimierung-ex2-link"
+          >
+            {props.text3}
+          </a>
+          <a
+            href="https://fontdrop.info/#/?darkmode=true"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="woff2optimierung-ex2-link1"
+          >
+            {props.text11}
+          </a>
         </div>
-      )}
-      {!toggle && (
-        <div
-          onClick={() => setToggle(!toggle)}
-          className="woff2optimierung-ex2-container3"
-        >
-          <svg viewBox="0 0 1024 1024" className="woff2optimierung-ex2-icon2">
-            <path
-              d="M658 708l-60 60-256-256 256-256 60 60-196 196z"
-              className=""
-            ></path>
-          </svg>
-        </div>
-      )}
+      </div>
+      <div
+        onClick={() => setToggle(!toggle)}
+        className="woff2optimierung-ex2-container3"
+      >
+        <svg viewBox="0 0 1024 1024" className="woff2optimierung-ex2-icon2">
+          <path
+            d="M658 708l-60 60-256-256 256-256 60 60-196 196z"
+            className=""
+          ></path>
+        </svg>
+      </div>
     </div>
   )
 }

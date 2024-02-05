@@ -12,34 +12,32 @@ const MussdasseinSlider = (props) => {
     <div className={`mussdassein-slider-container ${props.rootClassName} `}>
       <div className="mussdassein-slider-container1">
         <div className="mussdassein-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="mussdassein-slider-container2">
-              <div className="mussdassein-slider-storyfortschrit">
-                <div className="mussdassein-slider-activ"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(10)}
-                className="mussdassein-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="mussdassein-slider-rarrow finger"
-              ></div>
-              <h1 className="">{props.heading}</h1>
-              <div className="mussdassein-slider-container3">
-                <div className="mussdassein-slider-container4">
-                  <Player
-                    src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/25e9c83c-899f-414b-aa0d-a999a85eecee"
-                    speed="0.3"
-                    autoplay
-                    background="transparent"
-                    className="mussdassein-slider-lottie-node"
-                  ></Player>
-                  <span className="mussdassein-slider-text1">{props.text}</span>
-                </div>
+          <div className="mussdassein-slider-container2">
+            <div className="mussdassein-slider-storyfortschrit">
+              <div className="mussdassein-slider-activ"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(10)}
+              className="mussdassein-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="mussdassein-slider-rarrow finger"
+            ></div>
+            <h1 className="">{props.heading}</h1>
+            <div className="mussdassein-slider-container3">
+              <div className="mussdassein-slider-container4">
+                <Player
+                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/25e9c83c-899f-414b-aa0d-a999a85eecee"
+                  speed="0.3"
+                  autoplay
+                  background="transparent"
+                  className="mussdassein-slider-lottie-node"
+                ></Player>
+                <span className="mussdassein-slider-text1">{props.text}</span>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
       <div className="">

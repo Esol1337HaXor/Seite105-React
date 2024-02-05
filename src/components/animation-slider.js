@@ -15,118 +15,112 @@ const AnimationSlider = (props) => {
     <div className={`animation-slider-container ${props.rootClassName} `}>
       <div className="animation-slider-container01">
         <div className="animation-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="animation-slider-container02">
-              <div className="animation-slider-storyfortschrit">
-                <div className="animation-slider-activ"></div>
-                <div className="animation-slider-passiv"></div>
-                <div className="animation-slider-passiv1"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="animation-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="animation-slider-rarrow finger"
-              >
+          <div className="animation-slider-container02">
+            <div className="animation-slider-storyfortschrit">
+              <div className="animation-slider-activ"></div>
+              <div className="animation-slider-passiv"></div>
+              <div className="animation-slider-passiv1"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="animation-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="animation-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="animation-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading}</h1>
+            <div className="animation-slider-container03">
+              <div className="animation-slider-container04">
                 <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/491ce46a-5893-4b5d-bb33-c88ddad389fe"
                   loop
-                  speed="0.5"
+                  speed="0.3"
                   autoplay
                   background="transparent"
-                  className="animation-slider-lottie-node"
+                  className="animation-slider-lottie-node1"
                 ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="animation-slider-container03">
-                <div className="animation-slider-container04">
-                  <Player
-                    src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/491ce46a-5893-4b5d-bb33-c88ddad389fe"
-                    loop
-                    speed="0.3"
-                    autoplay
-                    background="transparent"
-                    className="animation-slider-lottie-node1"
-                  ></Player>
-                  <span className="animation-slider-text1">{props.text}</span>
-                </div>
-              </div>
-              <AnimationEx1 className=""></AnimationEx1>
-            </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="animation-slider-container05">
-              <div className="animation-slider-storyfortschrit1">
-                <div className="animation-slider-passiv2"></div>
-                <div className="animation-slider-activ1"></div>
-                <div className="animation-slider-passiv3"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="animation-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="animation-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="animation-slider-container06">
-                <div className="animation-slider-container07">
-                  <Player
-                    src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/98f1e934-d648-4204-9922-614a41700bc0"
-                    loop
-                    speed="0.3"
-                    autoplay
-                    background="transparent"
-                    className="animation-slider-lottie-node2"
-                  ></Player>
-                  <span className="animation-slider-text3">{props.text1}</span>
-                </div>
-                <AnimationEx2
-                  rootClassName="animation-ex2-root-class-name1"
-                  className=""
-                ></AnimationEx2>
+                <span className="animation-slider-text1">{props.text}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="animation-slider-container08">
-              <div className="animation-slider-storyfortschrit2">
-                <div className="animation-slider-passiv4"></div>
-                <div className="animation-slider-passiv5"></div>
-                <div className="animation-slider-activ2"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="animation-slider-larrow2 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="animation-slider-rarrow2 finger"
-              ></div>
-              <h1 className="">{props.heading11}</h1>
-              <div className="animation-slider-container09">
-                <div className="animation-slider-container10">
-                  <Player
-                    src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/398cd10d-338f-4904-beeb-ccbb7cc73231"
-                    loop
-                    speed="0.3"
-                    autoplay
-                    background="transparent"
-                    className="animation-slider-lottie-node3"
-                  ></Player>
-                  <span className="animation-slider-text5">{props.text11}</span>
-                </div>
-                <AnimationEx3
-                  rootClassName="animation-ex3-root-class-name3"
-                  className=""
-                ></AnimationEx3>
-              </div>
+            <AnimationEx1 className=""></AnimationEx1>
+          </div>
+          <div className="animation-slider-container05">
+            <div className="animation-slider-storyfortschrit1">
+              <div className="animation-slider-passiv2"></div>
+              <div className="animation-slider-activ1"></div>
+              <div className="animation-slider-passiv3"></div>
             </div>
-          )}
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="animation-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="animation-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="animation-slider-container06">
+              <div className="animation-slider-container07">
+                <Player
+                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/98f1e934-d648-4204-9922-614a41700bc0"
+                  loop
+                  speed="0.3"
+                  autoplay
+                  background="transparent"
+                  className="animation-slider-lottie-node2"
+                ></Player>
+                <span className="animation-slider-text3">{props.text1}</span>
+              </div>
+              <AnimationEx2
+                rootClassName="animation-ex2-root-class-name1"
+                className=""
+              ></AnimationEx2>
+            </div>
+          </div>
+          <div className="animation-slider-container08">
+            <div className="animation-slider-storyfortschrit2">
+              <div className="animation-slider-passiv4"></div>
+              <div className="animation-slider-passiv5"></div>
+              <div className="animation-slider-activ2"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="animation-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="animation-slider-rarrow2 finger"
+            ></div>
+            <h1 className="">{props.heading11}</h1>
+            <div className="animation-slider-container09">
+              <div className="animation-slider-container10">
+                <Player
+                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/398cd10d-338f-4904-beeb-ccbb7cc73231"
+                  loop
+                  speed="0.3"
+                  autoplay
+                  background="transparent"
+                  className="animation-slider-lottie-node3"
+                ></Player>
+                <span className="animation-slider-text5">{props.text11}</span>
+              </div>
+              <AnimationEx3
+                rootClassName="animation-ex3-root-class-name3"
+                className=""
+              ></AnimationEx3>
+            </div>
+          </div>
         </div>
       </div>
       <div className="">

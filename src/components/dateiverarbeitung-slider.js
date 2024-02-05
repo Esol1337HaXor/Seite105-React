@@ -16,82 +16,78 @@ const DateiverarbeitungSlider = (props) => {
     >
       <div className="dateiverarbeitung-slider-container01">
         <div className="dateiverarbeitung-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="dateiverarbeitung-slider-container02">
-              <DateiverarbeitungEx1
-                rootClassName="dateiverarbeitung-ex1-root-class-name1"
+          <div className="dateiverarbeitung-slider-container02">
+            <DateiverarbeitungEx1
+              rootClassName="dateiverarbeitung-ex1-root-class-name1"
+              className=""
+            ></DateiverarbeitungEx1>
+            <div className="dateiverarbeitung-slider-storyfortschrit">
+              <div className="dateiverarbeitung-slider-activ"></div>
+              <div className="dateiverarbeitung-slider-passiv"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="dateiverarbeitung-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="dateiverarbeitung-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="dateiverarbeitung-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading}</h1>
+            <div className="dateiverarbeitung-slider-container03">
+              <div className="dateiverarbeitung-slider-container04">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="dateiverarbeitung-slider-image"
+                />
+                <span className="dateiverarbeitung-slider-text1">
+                  {props.text}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="dateiverarbeitung-slider-container05">
+            <div className="dateiverarbeitung-slider-storyfortschrit1">
+              <div className="dateiverarbeitung-slider-passiv1"></div>
+              <div className="dateiverarbeitung-slider-activ1"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="dateiverarbeitung-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="dateiverarbeitung-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="dateiverarbeitung-slider-container06">
+              <div className="dateiverarbeitung-slider-container07">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="dateiverarbeitung-slider-image1"
+                />
+                <span className="dateiverarbeitung-slider-text3">
+                  {props.text1}
+                </span>
+              </div>
+              <DateiverarbeitungEx2
+                rootClassName="dateiverarbeitung-ex2-root-class-name1"
                 className=""
-              ></DateiverarbeitungEx1>
-              <div className="dateiverarbeitung-slider-storyfortschrit">
-                <div className="dateiverarbeitung-slider-activ"></div>
-                <div className="dateiverarbeitung-slider-passiv"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="dateiverarbeitung-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="dateiverarbeitung-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="dateiverarbeitung-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="dateiverarbeitung-slider-container03">
-                <div className="dateiverarbeitung-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="dateiverarbeitung-slider-image"
-                  />
-                  <span className="dateiverarbeitung-slider-text1">
-                    {props.text}
-                  </span>
-                </div>
-              </div>
+              ></DateiverarbeitungEx2>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="dateiverarbeitung-slider-container05">
-              <div className="dateiverarbeitung-slider-storyfortschrit1">
-                <div className="dateiverarbeitung-slider-passiv1"></div>
-                <div className="dateiverarbeitung-slider-activ1"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="dateiverarbeitung-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="dateiverarbeitung-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="dateiverarbeitung-slider-container06">
-                <div className="dateiverarbeitung-slider-container07">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="dateiverarbeitung-slider-image1"
-                  />
-                  <span className="dateiverarbeitung-slider-text3">
-                    {props.text1}
-                  </span>
-                </div>
-                <DateiverarbeitungEx2
-                  rootClassName="dateiverarbeitung-ex2-root-class-name1"
-                  className=""
-                ></DateiverarbeitungEx2>
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </div>
       <div className="">

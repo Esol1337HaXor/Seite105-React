@@ -15,188 +15,178 @@ const AnbieterprfungSlider = (props) => {
     <div className={`anbieterprfung-slider-container ${props.rootClassName} `}>
       <div className="anbieterprfung-slider-container01">
         <div className="anbieterprfung-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="anbieterprfung-slider-container02">
-              <div className="anbieterprfung-slider-storyfortschrit">
-                <div className="anbieterprfung-slider-activ"></div>
-                <div className="anbieterprfung-slider-passiv"></div>
-                <div className="anbieterprfung-slider-passiv01"></div>
-                <div className="anbieterprfung-slider-passiv02"></div>
-                <div className="anbieterprfung-slider-passiv03"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(5)}
-                className="anbieterprfung-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="anbieterprfung-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="/HAL/handpointer.json"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="anbieterprfung-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="anbieterprfung-slider-text">{props.heading}</h1>
-              <div className="anbieterprfung-slider-container03">
-                <div className="anbieterprfung-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="anbieterprfung-slider-image"
-                  />
-                  <span className="anbieterprfung-slider-text01">
-                    {props.text}
-                  </span>
-                </div>
+          <div className="anbieterprfung-slider-container02">
+            <div className="anbieterprfung-slider-storyfortschrit">
+              <div className="anbieterprfung-slider-activ"></div>
+              <div className="anbieterprfung-slider-passiv"></div>
+              <div className="anbieterprfung-slider-passiv01"></div>
+              <div className="anbieterprfung-slider-passiv02"></div>
+              <div className="anbieterprfung-slider-passiv03"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="anbieterprfung-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="anbieterprfung-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="/HAL/handpointer.json"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="anbieterprfung-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="anbieterprfung-slider-text">{props.heading}</h1>
+            <div className="anbieterprfung-slider-container03">
+              <div className="anbieterprfung-slider-container04">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="anbieterprfung-slider-image"
+                />
+                <span className="anbieterprfung-slider-text01">
+                  {props.text}
+                </span>
               </div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="anbieterprfung-slider-container05">
-              <div className="anbieterprfung-slider-storyfortschrit1">
-                <div className="anbieterprfung-slider-passiv04"></div>
-                <div className="anbieterprfung-slider-activ1"></div>
-                <div className="anbieterprfung-slider-passiv05"></div>
-                <div className="anbieterprfung-slider-passiv06"></div>
-                <div className="anbieterprfung-slider-passiv07"></div>
+          </div>
+          <div className="anbieterprfung-slider-container05">
+            <div className="anbieterprfung-slider-storyfortschrit1">
+              <div className="anbieterprfung-slider-passiv04"></div>
+              <div className="anbieterprfung-slider-activ1"></div>
+              <div className="anbieterprfung-slider-passiv05"></div>
+              <div className="anbieterprfung-slider-passiv06"></div>
+              <div className="anbieterprfung-slider-passiv07"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="anbieterprfung-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="anbieterprfung-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="anbieterprfung-slider-container06">
+              <div className="anbieterprfung-slider-container07">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="anbieterprfung-slider-image1"
+                />
+                <span className="anbieterprfung-slider-text03">
+                  {props.text3}
+                </span>
               </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="anbieterprfung-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="anbieterprfung-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="anbieterprfung-slider-container06">
-                <div className="anbieterprfung-slider-container07">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="anbieterprfung-slider-image1"
-                  />
-                  <span className="anbieterprfung-slider-text03">
-                    {props.text3}
-                  </span>
-                </div>
+            </div>
+            <AnbieterprfungEx1
+              rootClassName="anbieterprfung-ex1-root-class-name1"
+              className=""
+            ></AnbieterprfungEx1>
+          </div>
+          <div className="anbieterprfung-slider-container08">
+            <div className="anbieterprfung-slider-storyfortschrit2">
+              <div className="anbieterprfung-slider-passiv08"></div>
+              <div className="anbieterprfung-slider-passiv09"></div>
+              <div className="anbieterprfung-slider-activ2"></div>
+              <div className="anbieterprfung-slider-passiv10"></div>
+              <div className="anbieterprfung-slider-passiv11"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="anbieterprfung-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="anbieterprfung-slider-rarrow2 finger"
+            ></div>
+            <h1 className="">{props.heading11}</h1>
+            <div className="anbieterprfung-slider-container09">
+              <div className="anbieterprfung-slider-container10">
+                <img
+                  alt={props.imageAlt311}
+                  src={props.imageSrc311}
+                  className="anbieterprfung-slider-image2"
+                />
+                <span className="anbieterprfung-slider-text05">
+                  {props.text31}
+                </span>
               </div>
-              <AnbieterprfungEx1
-                rootClassName="anbieterprfung-ex1-root-class-name1"
+              <AnbieterprfungEx2
+                rootClassName="anbieterprfung-ex2-root-class-name1"
                 className=""
-              ></AnbieterprfungEx1>
+              ></AnbieterprfungEx2>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="anbieterprfung-slider-container08">
-              <div className="anbieterprfung-slider-storyfortschrit2">
-                <div className="anbieterprfung-slider-passiv08"></div>
-                <div className="anbieterprfung-slider-passiv09"></div>
-                <div className="anbieterprfung-slider-activ2"></div>
-                <div className="anbieterprfung-slider-passiv10"></div>
-                <div className="anbieterprfung-slider-passiv11"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="anbieterprfung-slider-larrow2 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="anbieterprfung-slider-rarrow2 finger"
-              ></div>
-              <h1 className="">{props.heading11}</h1>
-              <div className="anbieterprfung-slider-container09">
-                <div className="anbieterprfung-slider-container10">
-                  <img
-                    alt={props.imageAlt311}
-                    src={props.imageSrc311}
-                    className="anbieterprfung-slider-image2"
-                  />
-                  <span className="anbieterprfung-slider-text05">
-                    {props.text31}
-                  </span>
-                </div>
-                <AnbieterprfungEx2
-                  rootClassName="anbieterprfung-ex2-root-class-name1"
-                  className=""
-                ></AnbieterprfungEx2>
-              </div>
+          </div>
+          <div className="anbieterprfung-slider-container11">
+            <div className="anbieterprfung-slider-storyfortschrit3">
+              <div className="anbieterprfung-slider-passiv12"></div>
+              <div className="anbieterprfung-slider-passiv13"></div>
+              <div className="anbieterprfung-slider-passiv14"></div>
+              <div className="anbieterprfung-slider-activ3"></div>
+              <div className="anbieterprfung-slider-passiv15"></div>
             </div>
-          )}
-          {slideNumber === 4 && (
-            <div className="anbieterprfung-slider-container11">
-              <div className="anbieterprfung-slider-storyfortschrit3">
-                <div className="anbieterprfung-slider-passiv12"></div>
-                <div className="anbieterprfung-slider-passiv13"></div>
-                <div className="anbieterprfung-slider-passiv14"></div>
-                <div className="anbieterprfung-slider-activ3"></div>
-                <div className="anbieterprfung-slider-passiv15"></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="anbieterprfung-slider-larrow3 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="anbieterprfung-slider-rarrow3 finger"
+            ></div>
+            <h1 className="">{props.heading111}</h1>
+            <div className="anbieterprfung-slider-container12">
+              <div className="anbieterprfung-slider-container13">
+                <img
+                  alt={props.imageAlt3111}
+                  src={props.imageSrc3111}
+                  className="anbieterprfung-slider-image3"
+                />
+                <span className="anbieterprfung-slider-text07">
+                  {props.text311}
+                </span>
               </div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="anbieterprfung-slider-larrow3 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(5)}
-                className="anbieterprfung-slider-rarrow3 finger"
-              ></div>
-              <h1 className="">{props.heading111}</h1>
-              <div className="anbieterprfung-slider-container12">
-                <div className="anbieterprfung-slider-container13">
-                  <img
-                    alt={props.imageAlt3111}
-                    src={props.imageSrc3111}
-                    className="anbieterprfung-slider-image3"
-                  />
-                  <span className="anbieterprfung-slider-text07">
-                    {props.text311}
-                  </span>
-                </div>
-                <AnbieterprfungEx3
-                  rootClassName="anbieterprfung-ex3-root-class-name1"
-                  className=""
-                ></AnbieterprfungEx3>
+              <AnbieterprfungEx3
+                rootClassName="anbieterprfung-ex3-root-class-name1"
+                className=""
+              ></AnbieterprfungEx3>
+            </div>
+          </div>
+          <div className="anbieterprfung-slider-container14">
+            <div className="anbieterprfung-slider-storyfortschrit4">
+              <div className="anbieterprfung-slider-passiv16"></div>
+              <div className="anbieterprfung-slider-passiv17"></div>
+              <div className="anbieterprfung-slider-passiv18"></div>
+              <div className="anbieterprfung-slider-passiv19"></div>
+              <div className="anbieterprfung-slider-activ4"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="anbieterprfung-slider-larrow4 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="anbieterprfung-slider-rarrow4 finger"
+            ></div>
+            <h1 className="">{props.heading1111}</h1>
+            <div className="anbieterprfung-slider-container15">
+              <div className="anbieterprfung-slider-container16">
+                <img
+                  alt={props.imageAlt31111}
+                  src={props.imageSrc31111}
+                  className="anbieterprfung-slider-image4"
+                />
+                <span className="anbieterprfung-slider-text09">
+                  {props.text3111}
+                </span>
               </div>
             </div>
-          )}
-          {slideNumber === 5 && (
-            <div className="anbieterprfung-slider-container14">
-              <div className="anbieterprfung-slider-storyfortschrit4">
-                <div className="anbieterprfung-slider-passiv16"></div>
-                <div className="anbieterprfung-slider-passiv17"></div>
-                <div className="anbieterprfung-slider-passiv18"></div>
-                <div className="anbieterprfung-slider-passiv19"></div>
-                <div className="anbieterprfung-slider-activ4"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="anbieterprfung-slider-larrow4 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="anbieterprfung-slider-rarrow4 finger"
-              ></div>
-              <h1 className="">{props.heading1111}</h1>
-              <div className="anbieterprfung-slider-container15">
-                <div className="anbieterprfung-slider-container16">
-                  <img
-                    alt={props.imageAlt31111}
-                    src={props.imageSrc31111}
-                    className="anbieterprfung-slider-image4"
-                  />
-                  <span className="anbieterprfung-slider-text09">
-                    {props.text3111}
-                  </span>
-                </div>
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </div>
       <div className="">

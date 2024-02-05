@@ -14,79 +14,71 @@ const VektorgrafikSlider = (props) => {
     <div className={`vektorgrafik-slider-container ${props.rootClassName} `}>
       <div className="vektorgrafik-slider-container01">
         <div className="vektorgrafik-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="vektorgrafik-slider-container02">
-              <div className="vektorgrafik-slider-storyfortschrit">
-                <div className="vektorgrafik-slider-activ"></div>
-                <div className="vektorgrafik-slider-passiv"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="vektorgrafik-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="vektorgrafik-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="vektorgrafik-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="vektorgrafik-slider-container03">
-                <div className="vektorgrafik-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="vektorgrafik-slider-image"
-                  />
-                  <span className="vektorgrafik-slider-text1">
-                    {props.text}
-                  </span>
-                </div>
-              </div>
-              <VektorgrafikEx1 className=""></VektorgrafikEx1>
+          <div className="vektorgrafik-slider-container02">
+            <div className="vektorgrafik-slider-storyfortschrit">
+              <div className="vektorgrafik-slider-activ"></div>
+              <div className="vektorgrafik-slider-passiv"></div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="vektorgrafik-slider-container05">
-              <div className="vektorgrafik-slider-storyfortschrit1">
-                <div className="vektorgrafik-slider-passiv1"></div>
-                <div className="vektorgrafik-slider-activ1"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="vektorgrafik-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="vektorgrafik-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="vektorgrafik-slider-container06">
-                <div className="vektorgrafik-slider-container07">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="vektorgrafik-slider-image1"
-                  />
-                  <span className="vektorgrafik-slider-text3">
-                    {props.text3}
-                  </span>
-                </div>
-              </div>
-              <VektorgrafikEx2
-                rootClassName="vektorgrafik-ex2-root-class-name2"
-                className=""
-              ></VektorgrafikEx2>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="vektorgrafik-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="vektorgrafik-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="vektorgrafik-slider-lottie-node"
+              ></Player>
             </div>
-          )}
+            <h1 className="">{props.heading}</h1>
+            <div className="vektorgrafik-slider-container03">
+              <div className="vektorgrafik-slider-container04">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="vektorgrafik-slider-image"
+                />
+                <span className="vektorgrafik-slider-text1">{props.text}</span>
+              </div>
+            </div>
+            <VektorgrafikEx1 className=""></VektorgrafikEx1>
+          </div>
+          <div className="vektorgrafik-slider-container05">
+            <div className="vektorgrafik-slider-storyfortschrit1">
+              <div className="vektorgrafik-slider-passiv1"></div>
+              <div className="vektorgrafik-slider-activ1"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="vektorgrafik-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="vektorgrafik-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="vektorgrafik-slider-container06">
+              <div className="vektorgrafik-slider-container07">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="vektorgrafik-slider-image1"
+                />
+                <span className="vektorgrafik-slider-text3">{props.text3}</span>
+              </div>
+            </div>
+            <VektorgrafikEx2
+              rootClassName="vektorgrafik-ex2-root-class-name2"
+              className=""
+            ></VektorgrafikEx2>
+          </div>
         </div>
       </div>
       <div className="">

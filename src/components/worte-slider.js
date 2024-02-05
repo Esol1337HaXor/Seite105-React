@@ -11,24 +11,22 @@ const WorteSlider = (props) => {
     <div className={`worte-slider-container ${props.rootClassName} `}>
       <div className="worte-slider-container1">
         <div className="worte-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="worte-slider-container2">
-              <div className="worte-slider-storyfortschrit">
-                <div className="worte-slider-activ"></div>
-              </div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="worte-slider-container3">
-                <div className="worte-slider-container4">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="worte-slider-image"
-                  />
-                  <span className="worte-slider-text1">{props.text3}</span>
-                </div>
+          <div className="worte-slider-container2">
+            <div className="worte-slider-storyfortschrit">
+              <div className="worte-slider-activ"></div>
+            </div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="worte-slider-container3">
+              <div className="worte-slider-container4">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="worte-slider-image"
+                />
+                <span className="worte-slider-text1">{props.text3}</span>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
       <div className="">

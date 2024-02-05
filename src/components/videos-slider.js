@@ -13,116 +13,110 @@ const VideosSlider = (props) => {
     <div className={`videos-slider-container ${props.rootClassName} `}>
       <div className="videos-slider-container01">
         <div className="videos-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="videos-slider-container02">
-              <div className="videos-slider-storyfortschrit">
-                <div className="videos-slider-activ"></div>
-                <div className="videos-slider-passiv"></div>
-                <div className="videos-slider-passiv1"></div>
+          <div className="videos-slider-container02">
+            <div className="videos-slider-storyfortschrit">
+              <div className="videos-slider-activ"></div>
+              <div className="videos-slider-passiv"></div>
+              <div className="videos-slider-passiv1"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(10)}
+              className="videos-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="videos-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="videos-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading}</h1>
+            <div className="videos-slider-container03">
+              <div className="videos-slider-container04">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="videos-slider-image"
+                />
+                <span className="videos-slider-text1">{props.text1}</span>
               </div>
-              <div
-                onClick={() => setSlideNumber(10)}
-                className="videos-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="videos-slider-rarrow finger"
-              >
+            </div>
+          </div>
+          <div className="videos-slider-container05">
+            <div className="videos-slider-storyfortschrit1">
+              <div className="videos-slider-passiv2"></div>
+              <div className="videos-slider-activ1"></div>
+              <div className="videos-slider-passiv3"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="videos-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="videos-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="videos-slider-container06">
+              <div className="videos-slider-container07">
                 <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/642076b9-7f4e-4bff-984d-536c84de0957"
                   loop
-                  speed="0.5"
+                  speed="0.3"
                   autoplay
                   background="transparent"
-                  className="videos-slider-lottie-node"
+                  className="videos-slider-lottie-node1"
                 ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="videos-slider-container03">
-                <div className="videos-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="videos-slider-image"
-                  />
-                  <span className="videos-slider-text1">{props.text1}</span>
-                </div>
+                <span className="videos-slider-text3">{props.text2}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="videos-slider-container05">
-              <div className="videos-slider-storyfortschrit1">
-                <div className="videos-slider-passiv2"></div>
-                <div className="videos-slider-activ1"></div>
-                <div className="videos-slider-passiv3"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="videos-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="videos-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="videos-slider-container06">
-                <div className="videos-slider-container07">
-                  <Player
-                    src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/642076b9-7f4e-4bff-984d-536c84de0957"
-                    loop
-                    speed="0.3"
-                    autoplay
-                    background="transparent"
-                    className="videos-slider-lottie-node1"
-                  ></Player>
-                  <span className="videos-slider-text3">{props.text2}</span>
-                </div>
-              </div>
+          </div>
+          <div className="videos-slider-container08">
+            <div className="videos-slider-storyfortschrit2">
+              <div className="videos-slider-passiv4"></div>
+              <div className="videos-slider-passiv5"></div>
+              <div className="videos-slider-activ2"></div>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="videos-slider-container08">
-              <div className="videos-slider-storyfortschrit2">
-                <div className="videos-slider-passiv4"></div>
-                <div className="videos-slider-passiv5"></div>
-                <div className="videos-slider-activ2"></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="videos-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="videos-slider-rarrow2 finger"
+            ></div>
+            <h1 className="">{props.heading2}</h1>
+            <div className="videos-slider-container09">
+              <span className="videos-slider-text4">{props.text122}</span>
+              <div className="videos-slider-container10">
+                <img
+                  alt={props.imageAlt32}
+                  src={props.imageSrc32}
+                  className="videos-slider-image1"
+                />
+                <span className="videos-slider-text5">{props.text12}</span>
               </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="videos-slider-larrow2 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="videos-slider-rarrow2 finger"
-              ></div>
-              <h1 className="">{props.heading2}</h1>
-              <div className="videos-slider-container09">
-                <span className="videos-slider-text4">{props.text122}</span>
-                <div className="videos-slider-container10">
-                  <img
-                    alt={props.imageAlt32}
-                    src={props.imageSrc32}
-                    className="videos-slider-image1"
-                  />
-                  <span className="videos-slider-text5">{props.text12}</span>
-                </div>
-                <div className="videos-slider-container11">
-                  <img
-                    alt={props.imageAlt321}
-                    src={props.imageSrc321}
-                    className="videos-slider-image2"
-                  />
-                  <span className="videos-slider-text6">{props.text121}</span>
-                </div>
-                <VideosEx1
-                  rootClassName="videos-ex1-root-class-name2"
-                  className=""
-                ></VideosEx1>
+              <div className="videos-slider-container11">
+                <img
+                  alt={props.imageAlt321}
+                  src={props.imageSrc321}
+                  className="videos-slider-image2"
+                />
+                <span className="videos-slider-text6">{props.text121}</span>
               </div>
+              <VideosEx1
+                rootClassName="videos-ex1-root-class-name2"
+                className=""
+              ></VideosEx1>
             </div>
-          )}
+          </div>
         </div>
       </div>
       <div className="">

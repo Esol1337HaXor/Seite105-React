@@ -12,25 +12,23 @@ const SkalierungSlider = (props) => {
     <div className={`skalierung-slider-container ${props.rootClassName} `}>
       <div className="skalierung-slider-container1">
         <div className="skalierung-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="skalierung-slider-container2">
-              <div className="skalierung-slider-storyfortschrit">
-                <div className="skalierung-slider-activ"></div>
-              </div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="skalierung-slider-container3">
-                <div className="skalierung-slider-container4">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="skalierung-slider-image"
-                  />
-                  <span className="skalierung-slider-text1">{props.text3}</span>
-                </div>
-              </div>
-              <SkalierungEx1 className=""></SkalierungEx1>
+          <div className="skalierung-slider-container2">
+            <div className="skalierung-slider-storyfortschrit">
+              <div className="skalierung-slider-activ"></div>
             </div>
-          )}
+            <h1 className="">{props.heading1}</h1>
+            <div className="skalierung-slider-container3">
+              <div className="skalierung-slider-container4">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="skalierung-slider-image"
+                />
+                <span className="skalierung-slider-text1">{props.text3}</span>
+              </div>
+            </div>
+            <SkalierungEx1 className=""></SkalierungEx1>
+          </div>
         </div>
       </div>
       <div className="">

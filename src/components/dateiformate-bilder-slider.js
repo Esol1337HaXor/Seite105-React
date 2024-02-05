@@ -17,107 +17,101 @@ const DateiformateBilderSlider = (props) => {
     >
       <div className="dateiformate-bilder-slider-container01">
         <div className="dateiformate-bilder-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="dateiformate-bilder-slider-container02">
-              <div className="dateiformate-bilder-slider-storyfortschrit">
-                <div className="dateiformate-bilder-slider-activ"></div>
-                <div className="dateiformate-bilder-slider-passiv"></div>
-                <div className="dateiformate-bilder-slider-passiv1"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="dateiformate-bilder-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="dateiformate-bilder-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="dateiformate-bilder-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading11}</h1>
-              <div className="dateiformate-bilder-slider-container03">
-                <div className="dateiformate-bilder-slider-container04">
-                  <img
-                    alt={props.imageAlt311}
-                    src={props.imageSrc311}
-                    className="dateiformate-bilder-slider-image"
-                  />
-                  <span className="dateiformate-bilder-slider-text1">
-                    {props.text11}
-                  </span>
-                </div>
-              </div>
-              <DateiformateBilderEx2 className=""></DateiformateBilderEx2>
+          <div className="dateiformate-bilder-slider-container02">
+            <div className="dateiformate-bilder-slider-storyfortschrit">
+              <div className="dateiformate-bilder-slider-activ"></div>
+              <div className="dateiformate-bilder-slider-passiv"></div>
+              <div className="dateiformate-bilder-slider-passiv1"></div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="dateiformate-bilder-slider-container05">
-              <DateiformateBilderEx1 className=""></DateiformateBilderEx1>
-              <div className="dateiformate-bilder-slider-storyfortschrit1">
-                <div className="dateiformate-bilder-slider-passiv2"></div>
-                <div className="dateiformate-bilder-slider-activ1"></div>
-                <div className="dateiformate-bilder-slider-passiv3"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="dateiformate-bilder-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="dateiformate-bilder-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading111}</h1>
-              <div className="dateiformate-bilder-slider-container06">
-                <div className="dateiformate-bilder-slider-container07">
-                  <img
-                    alt={props.imageAlt31111}
-                    src={props.imageSrc31111}
-                    className="dateiformate-bilder-slider-image1"
-                  />
-                  <span className="dateiformate-bilder-slider-text3">
-                    {props.text1111}
-                  </span>
-                </div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="dateiformate-bilder-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="dateiformate-bilder-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="dateiformate-bilder-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading11}</h1>
+            <div className="dateiformate-bilder-slider-container03">
+              <div className="dateiformate-bilder-slider-container04">
+                <img
+                  alt={props.imageAlt311}
+                  src={props.imageSrc311}
+                  className="dateiformate-bilder-slider-image"
+                />
+                <span className="dateiformate-bilder-slider-text1">
+                  {props.text11}
+                </span>
               </div>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="dateiformate-bilder-slider-container08">
-              <DateiformateBilderEx3
-                rootClassName="dateiformate-bilder-ex3-root-class-name2"
-                className=""
-              ></DateiformateBilderEx3>
-              <div className="dateiformate-bilder-slider-storyfortschrit2">
-                <div className="dateiformate-bilder-slider-passiv4"></div>
-                <div className="dateiformate-bilder-slider-passiv5"></div>
-                <div className="dateiformate-bilder-slider-activ2"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="dateiformate-bilder-slider-larrow2 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="dateiformate-bilder-slider-rarrow2 finger"
-              ></div>
-              <h1 className="">{props.heading112}</h1>
-              <div className="dateiformate-bilder-slider-container09">
-                <div className="dateiformate-bilder-slider-container10">
-                  <span className="dateiformate-bilder-slider-text5">
-                    {props.text113}
-                  </span>
-                </div>
+            <DateiformateBilderEx2 className=""></DateiformateBilderEx2>
+          </div>
+          <div className="dateiformate-bilder-slider-container05">
+            <DateiformateBilderEx1 className=""></DateiformateBilderEx1>
+            <div className="dateiformate-bilder-slider-storyfortschrit1">
+              <div className="dateiformate-bilder-slider-passiv2"></div>
+              <div className="dateiformate-bilder-slider-activ1"></div>
+              <div className="dateiformate-bilder-slider-passiv3"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="dateiformate-bilder-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="dateiformate-bilder-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading111}</h1>
+            <div className="dateiformate-bilder-slider-container06">
+              <div className="dateiformate-bilder-slider-container07">
+                <img
+                  alt={props.imageAlt31111}
+                  src={props.imageSrc31111}
+                  className="dateiformate-bilder-slider-image1"
+                />
+                <span className="dateiformate-bilder-slider-text3">
+                  {props.text1111}
+                </span>
               </div>
             </div>
-          )}
+          </div>
+          <div className="dateiformate-bilder-slider-container08">
+            <DateiformateBilderEx3
+              rootClassName="dateiformate-bilder-ex3-root-class-name2"
+              className=""
+            ></DateiformateBilderEx3>
+            <div className="dateiformate-bilder-slider-storyfortschrit2">
+              <div className="dateiformate-bilder-slider-passiv4"></div>
+              <div className="dateiformate-bilder-slider-passiv5"></div>
+              <div className="dateiformate-bilder-slider-activ2"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="dateiformate-bilder-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="dateiformate-bilder-slider-rarrow2 finger"
+            ></div>
+            <h1 className="">{props.heading112}</h1>
+            <div className="dateiformate-bilder-slider-container09">
+              <div className="dateiformate-bilder-slider-container10">
+                <span className="dateiformate-bilder-slider-text5">
+                  {props.text113}
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="">

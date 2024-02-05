@@ -10,57 +10,48 @@ const DateiformateBilderEx1 = (props) => {
     <div
       className={`dateiformate-bilder-ex1-container ${props.rootClassName} `}
     >
-      {toggle && (
-        <div
-          onClick={() => setToggle(false)}
-          className="dateiformate-bilder-ex1-container1"
-        >
-          <svg viewBox="0 0 1024 1024" className="dateiformate-bilder-ex1-icon">
-            <path
-              d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-              className=""
-            ></path>
-          </svg>
-          <div className="dateiformate-bilder-ex1-container2">
-            <span className="dateiformate-bilder-ex1-text">{props.text1}</span>
-            <a
-              href="https://caniuse.com/avif"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="dateiformate-bilder-ex1-link"
-            >
-              {props.text2}
-            </a>
-            <span className="dateiformate-bilder-ex1-text1">
-              {props.text11}
-            </span>
-            <a
-              href="https://github.com/0xC0000054/avif-format"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="dateiformate-bilder-ex1-link1"
-            >
-              {props.text21}
-            </a>
-          </div>
-        </div>
-      )}
-      {!toggle && (
-        <div
-          onClick={() => setToggle(!toggle)}
-          className="dateiformate-bilder-ex1-container3"
-        >
-          <svg
-            viewBox="0 0 1024 1024"
-            className="dateiformate-bilder-ex1-icon2"
+      <div
+        onClick={() => setToggle(false)}
+        className="dateiformate-bilder-ex1-container1"
+      >
+        <svg viewBox="0 0 1024 1024" className="dateiformate-bilder-ex1-icon">
+          <path
+            d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+            className=""
+          ></path>
+        </svg>
+        <div className="dateiformate-bilder-ex1-container2">
+          <span className="dateiformate-bilder-ex1-text">{props.text1}</span>
+          <a
+            href="https://caniuse.com/avif"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="dateiformate-bilder-ex1-link"
           >
-            <path
-              d="M658 708l-60 60-256-256 256-256 60 60-196 196z"
-              className=""
-            ></path>
-          </svg>
+            {props.text2}
+          </a>
+          <span className="dateiformate-bilder-ex1-text1">{props.text11}</span>
+          <a
+            href="https://github.com/0xC0000054/avif-format"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="dateiformate-bilder-ex1-link1"
+          >
+            {props.text21}
+          </a>
         </div>
-      )}
+      </div>
+      <div
+        onClick={() => setToggle(!toggle)}
+        className="dateiformate-bilder-ex1-container3"
+      >
+        <svg viewBox="0 0 1024 1024" className="dateiformate-bilder-ex1-icon2">
+          <path
+            d="M658 708l-60 60-256-256 256-256 60 60-196 196z"
+            className=""
+          ></path>
+        </svg>
+      </div>
     </div>
   )
 }

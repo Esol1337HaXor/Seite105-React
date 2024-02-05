@@ -12,262 +12,242 @@ const BuildWithSlider = (props) => {
     <div className={`build-with-slider-container ${props.rootClassName} `}>
       <div className="build-with-slider-container01">
         <div className="build-with-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="build-with-slider-container02">
-              <div className="build-with-slider-storyfortschrit">
-                <div className="build-with-slider-activ"></div>
-                <div className="build-with-slider-passiv"></div>
-                <div className="build-with-slider-passiv01"></div>
-                <div className="build-with-slider-passiv02"></div>
-                <div className="build-with-slider-passiv03"></div>
-                <div className="build-with-slider-passiv04"></div>
-                <div className="build-with-slider-passiv05"></div>
-                <div className="build-with-slider-passiv06"></div>
-                <div className="build-with-slider-passiv07"></div>
-                <div className="build-with-slider-passiv08"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(10)}
-                className="build-with-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="build-with-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="build-with-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="build-with-slider-container03">
-                <div className="build-with-slider-container04">
-                  <span className="build-with-slider-text1">{props.text}</span>
-                </div>
+          <div className="build-with-slider-container02">
+            <div className="build-with-slider-storyfortschrit">
+              <div className="build-with-slider-activ"></div>
+              <div className="build-with-slider-passiv"></div>
+              <div className="build-with-slider-passiv01"></div>
+              <div className="build-with-slider-passiv02"></div>
+              <div className="build-with-slider-passiv03"></div>
+              <div className="build-with-slider-passiv04"></div>
+              <div className="build-with-slider-passiv05"></div>
+              <div className="build-with-slider-passiv06"></div>
+              <div className="build-with-slider-passiv07"></div>
+              <div className="build-with-slider-passiv08"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(10)}
+              className="build-with-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="build-with-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="build-with-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading}</h1>
+            <div className="build-with-slider-container03">
+              <div className="build-with-slider-container04">
+                <span className="build-with-slider-text1">{props.text}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="build-with-slider-container05">
-              <div className="build-with-slider-storyfortschrit01">
-                <div className="build-with-slider-passiv09"></div>
-                <div className="build-with-slider-activ01"></div>
-                <div className="build-with-slider-passiv10"></div>
-                <div className="build-with-slider-passiv11"></div>
-                <div className="build-with-slider-passiv12"></div>
-                <div className="build-with-slider-passiv13"></div>
-                <div className="build-with-slider-passiv14"></div>
-                <div className="build-with-slider-passiv15"></div>
-                <div className="build-with-slider-passiv16"></div>
-                <div className="build-with-slider-passiv17"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="build-with-slider-larrow01 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="build-with-slider-rarrow01 finger"
-              ></div>
+          </div>
+          <div className="build-with-slider-container05">
+            <div className="build-with-slider-storyfortschrit01">
+              <div className="build-with-slider-passiv09"></div>
+              <div className="build-with-slider-activ01"></div>
+              <div className="build-with-slider-passiv10"></div>
+              <div className="build-with-slider-passiv11"></div>
+              <div className="build-with-slider-passiv12"></div>
+              <div className="build-with-slider-passiv13"></div>
+              <div className="build-with-slider-passiv14"></div>
+              <div className="build-with-slider-passiv15"></div>
+              <div className="build-with-slider-passiv16"></div>
+              <div className="build-with-slider-passiv17"></div>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="build-with-slider-container06">
-              <div className="build-with-slider-storyfortschrit02">
-                <div className="build-with-slider-passiv18"></div>
-                <div className="build-with-slider-passiv19"></div>
-                <div className="build-with-slider-activ02"></div>
-                <div className="build-with-slider-passiv20"></div>
-                <div className="build-with-slider-passiv21"></div>
-                <div className="build-with-slider-passiv22"></div>
-                <div className="build-with-slider-passiv23"></div>
-                <div className="build-with-slider-passiv24"></div>
-                <div className="build-with-slider-passiv25"></div>
-                <div className="build-with-slider-passiv26"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="build-with-slider-larrow02 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="build-with-slider-rarrow02 finger"
-              ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="build-with-slider-larrow01 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="build-with-slider-rarrow01 finger"
+            ></div>
+          </div>
+          <div className="build-with-slider-container06">
+            <div className="build-with-slider-storyfortschrit02">
+              <div className="build-with-slider-passiv18"></div>
+              <div className="build-with-slider-passiv19"></div>
+              <div className="build-with-slider-activ02"></div>
+              <div className="build-with-slider-passiv20"></div>
+              <div className="build-with-slider-passiv21"></div>
+              <div className="build-with-slider-passiv22"></div>
+              <div className="build-with-slider-passiv23"></div>
+              <div className="build-with-slider-passiv24"></div>
+              <div className="build-with-slider-passiv25"></div>
+              <div className="build-with-slider-passiv26"></div>
             </div>
-          )}
-          {slideNumber === 4 && (
-            <div className="build-with-slider-container07">
-              <div className="build-with-slider-storyfortschrit03">
-                <div className="build-with-slider-passiv27"></div>
-                <div className="build-with-slider-passiv28"></div>
-                <div className="build-with-slider-passiv29"></div>
-                <div className="build-with-slider-activ03"></div>
-                <div className="build-with-slider-passiv30"></div>
-                <div className="build-with-slider-passiv31"></div>
-                <div className="build-with-slider-passiv32"></div>
-                <div className="build-with-slider-passiv33"></div>
-                <div className="build-with-slider-passiv34"></div>
-                <div className="build-with-slider-passiv35"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="build-with-slider-larrow03 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(5)}
-                className="build-with-slider-rarrow03 finger"
-              ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="build-with-slider-larrow02 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="build-with-slider-rarrow02 finger"
+            ></div>
+          </div>
+          <div className="build-with-slider-container07">
+            <div className="build-with-slider-storyfortschrit03">
+              <div className="build-with-slider-passiv27"></div>
+              <div className="build-with-slider-passiv28"></div>
+              <div className="build-with-slider-passiv29"></div>
+              <div className="build-with-slider-activ03"></div>
+              <div className="build-with-slider-passiv30"></div>
+              <div className="build-with-slider-passiv31"></div>
+              <div className="build-with-slider-passiv32"></div>
+              <div className="build-with-slider-passiv33"></div>
+              <div className="build-with-slider-passiv34"></div>
+              <div className="build-with-slider-passiv35"></div>
             </div>
-          )}
-          {slideNumber === 5 && (
-            <div className="build-with-slider-container08">
-              <div className="build-with-slider-storyfortschrit04">
-                <div className="build-with-slider-passiv36"></div>
-                <div className="build-with-slider-passiv37"></div>
-                <div className="build-with-slider-passiv38"></div>
-                <div className="build-with-slider-passiv39"></div>
-                <div className="build-with-slider-activ04"></div>
-                <div className="build-with-slider-passiv40"></div>
-                <div className="build-with-slider-passiv41"></div>
-                <div className="build-with-slider-passiv42"></div>
-                <div className="build-with-slider-passiv43"></div>
-                <div className="build-with-slider-passiv44"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(4)}
-                className="build-with-slider-larrow04 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(6)}
-                className="build-with-slider-rarrow04 finger"
-              ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="build-with-slider-larrow03 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="build-with-slider-rarrow03 finger"
+            ></div>
+          </div>
+          <div className="build-with-slider-container08">
+            <div className="build-with-slider-storyfortschrit04">
+              <div className="build-with-slider-passiv36"></div>
+              <div className="build-with-slider-passiv37"></div>
+              <div className="build-with-slider-passiv38"></div>
+              <div className="build-with-slider-passiv39"></div>
+              <div className="build-with-slider-activ04"></div>
+              <div className="build-with-slider-passiv40"></div>
+              <div className="build-with-slider-passiv41"></div>
+              <div className="build-with-slider-passiv42"></div>
+              <div className="build-with-slider-passiv43"></div>
+              <div className="build-with-slider-passiv44"></div>
             </div>
-          )}
-          {slideNumber === 6 && (
-            <div className="build-with-slider-container09">
-              <div className="build-with-slider-storyfortschrit05">
-                <div className="build-with-slider-passiv45"></div>
-                <div className="build-with-slider-passiv46"></div>
-                <div className="build-with-slider-passiv47"></div>
-                <div className="build-with-slider-passiv48"></div>
-                <div className="build-with-slider-passiv49"></div>
-                <div className="build-with-slider-activ05"></div>
-                <div className="build-with-slider-passiv50"></div>
-                <div className="build-with-slider-passiv51"></div>
-                <div className="build-with-slider-passiv52"></div>
-                <div className="build-with-slider-passiv53"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(5)}
-                className="build-with-slider-larrow05 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(7)}
-                className="build-with-slider-rarrow05 finger"
-              ></div>
+            <div
+              onClick={() => setSlideNumber(4)}
+              className="build-with-slider-larrow04 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(6)}
+              className="build-with-slider-rarrow04 finger"
+            ></div>
+          </div>
+          <div className="build-with-slider-container09">
+            <div className="build-with-slider-storyfortschrit05">
+              <div className="build-with-slider-passiv45"></div>
+              <div className="build-with-slider-passiv46"></div>
+              <div className="build-with-slider-passiv47"></div>
+              <div className="build-with-slider-passiv48"></div>
+              <div className="build-with-slider-passiv49"></div>
+              <div className="build-with-slider-activ05"></div>
+              <div className="build-with-slider-passiv50"></div>
+              <div className="build-with-slider-passiv51"></div>
+              <div className="build-with-slider-passiv52"></div>
+              <div className="build-with-slider-passiv53"></div>
             </div>
-          )}
-          {slideNumber === 7 && (
-            <div className="build-with-slider-container10">
-              <div className="build-with-slider-storyfortschrit06">
-                <div className="build-with-slider-passiv54"></div>
-                <div className="build-with-slider-passiv55"></div>
-                <div className="build-with-slider-passiv56"></div>
-                <div className="build-with-slider-passiv57"></div>
-                <div className="build-with-slider-passiv58"></div>
-                <div className="build-with-slider-passiv59"></div>
-                <div className="build-with-slider-activ06"></div>
-                <div className="build-with-slider-passiv60"></div>
-                <div className="build-with-slider-passiv61"></div>
-                <div className="build-with-slider-passiv62"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(6)}
-                className="build-with-slider-larrow06 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(8)}
-                className="build-with-slider-rarrow06 finger"
-              ></div>
+            <div
+              onClick={() => setSlideNumber(5)}
+              className="build-with-slider-larrow05 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(7)}
+              className="build-with-slider-rarrow05 finger"
+            ></div>
+          </div>
+          <div className="build-with-slider-container10">
+            <div className="build-with-slider-storyfortschrit06">
+              <div className="build-with-slider-passiv54"></div>
+              <div className="build-with-slider-passiv55"></div>
+              <div className="build-with-slider-passiv56"></div>
+              <div className="build-with-slider-passiv57"></div>
+              <div className="build-with-slider-passiv58"></div>
+              <div className="build-with-slider-passiv59"></div>
+              <div className="build-with-slider-activ06"></div>
+              <div className="build-with-slider-passiv60"></div>
+              <div className="build-with-slider-passiv61"></div>
+              <div className="build-with-slider-passiv62"></div>
             </div>
-          )}
-          {slideNumber === 8 && (
-            <div className="build-with-slider-container11">
-              <div className="build-with-slider-storyfortschrit07">
-                <div className="build-with-slider-passiv63"></div>
-                <div className="build-with-slider-passiv64"></div>
-                <div className="build-with-slider-passiv65"></div>
-                <div className="build-with-slider-passiv66"></div>
-                <div className="build-with-slider-passiv67"></div>
-                <div className="build-with-slider-passiv68"></div>
-                <div className="build-with-slider-passiv69"></div>
-                <div className="build-with-slider-activ07"></div>
-                <div className="build-with-slider-passiv70"></div>
-                <div className="build-with-slider-passiv71"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(7)}
-                className="build-with-slider-larrow07 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(9)}
-                className="build-with-slider-rarrow07 finger"
-              ></div>
+            <div
+              onClick={() => setSlideNumber(6)}
+              className="build-with-slider-larrow06 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(8)}
+              className="build-with-slider-rarrow06 finger"
+            ></div>
+          </div>
+          <div className="build-with-slider-container11">
+            <div className="build-with-slider-storyfortschrit07">
+              <div className="build-with-slider-passiv63"></div>
+              <div className="build-with-slider-passiv64"></div>
+              <div className="build-with-slider-passiv65"></div>
+              <div className="build-with-slider-passiv66"></div>
+              <div className="build-with-slider-passiv67"></div>
+              <div className="build-with-slider-passiv68"></div>
+              <div className="build-with-slider-passiv69"></div>
+              <div className="build-with-slider-activ07"></div>
+              <div className="build-with-slider-passiv70"></div>
+              <div className="build-with-slider-passiv71"></div>
             </div>
-          )}
-          {slideNumber === 9 && (
-            <div className="build-with-slider-container12">
-              <div className="build-with-slider-storyfortschrit08">
-                <div className="build-with-slider-passiv72"></div>
-                <div className="build-with-slider-passiv73"></div>
-                <div className="build-with-slider-passiv74"></div>
-                <div className="build-with-slider-passiv75"></div>
-                <div className="build-with-slider-passiv76"></div>
-                <div className="build-with-slider-passiv77"></div>
-                <div className="build-with-slider-passiv78"></div>
-                <div className="build-with-slider-passiv79"></div>
-                <div className="build-with-slider-activ08"></div>
-                <div className="build-with-slider-passiv80"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(8)}
-                className="build-with-slider-larrow08 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(10)}
-                className="build-with-slider-rarrow08 finger"
-              ></div>
+            <div
+              onClick={() => setSlideNumber(7)}
+              className="build-with-slider-larrow07 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(9)}
+              className="build-with-slider-rarrow07 finger"
+            ></div>
+          </div>
+          <div className="build-with-slider-container12">
+            <div className="build-with-slider-storyfortschrit08">
+              <div className="build-with-slider-passiv72"></div>
+              <div className="build-with-slider-passiv73"></div>
+              <div className="build-with-slider-passiv74"></div>
+              <div className="build-with-slider-passiv75"></div>
+              <div className="build-with-slider-passiv76"></div>
+              <div className="build-with-slider-passiv77"></div>
+              <div className="build-with-slider-passiv78"></div>
+              <div className="build-with-slider-passiv79"></div>
+              <div className="build-with-slider-activ08"></div>
+              <div className="build-with-slider-passiv80"></div>
             </div>
-          )}
-          {slideNumber === 10 && (
-            <div className="build-with-slider-container13">
-              <div className="build-with-slider-storyfortschrit09">
-                <div className="build-with-slider-passiv81"></div>
-                <div className="build-with-slider-passiv82"></div>
-                <div className="build-with-slider-passiv83"></div>
-                <div className="build-with-slider-passiv84"></div>
-                <div className="build-with-slider-passiv85"></div>
-                <div className="build-with-slider-passiv86"></div>
-                <div className="build-with-slider-passiv87"></div>
-                <div className="build-with-slider-passiv88"></div>
-                <div className="build-with-slider-passiv89"></div>
-                <div className="build-with-slider-activ09"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(9)}
-                className="build-with-slider-larrow09 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="build-with-slider-rarrow09 finger"
-              ></div>
+            <div
+              onClick={() => setSlideNumber(8)}
+              className="build-with-slider-larrow08 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(10)}
+              className="build-with-slider-rarrow08 finger"
+            ></div>
+          </div>
+          <div className="build-with-slider-container13">
+            <div className="build-with-slider-storyfortschrit09">
+              <div className="build-with-slider-passiv81"></div>
+              <div className="build-with-slider-passiv82"></div>
+              <div className="build-with-slider-passiv83"></div>
+              <div className="build-with-slider-passiv84"></div>
+              <div className="build-with-slider-passiv85"></div>
+              <div className="build-with-slider-passiv86"></div>
+              <div className="build-with-slider-passiv87"></div>
+              <div className="build-with-slider-passiv88"></div>
+              <div className="build-with-slider-passiv89"></div>
+              <div className="build-with-slider-activ09"></div>
             </div>
-          )}
+            <div
+              onClick={() => setSlideNumber(9)}
+              className="build-with-slider-larrow09 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="build-with-slider-rarrow09 finger"
+            ></div>
+          </div>
         </div>
       </div>
       <div className="">

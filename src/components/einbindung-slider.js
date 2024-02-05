@@ -13,106 +13,98 @@ const EinbindungSlider = (props) => {
     <div className={`einbindung-slider-container ${props.rootClassName} `}>
       <div className="einbindung-slider-container01">
         <div className="einbindung-slider-sliderpanel">
-          {slideNumber === 1 && (
-            <div className="einbindung-slider-container02">
-              <div className="einbindung-slider-storyfortschrit">
-                <div className="einbindung-slider-activ"></div>
-                <div className="einbindung-slider-passiv"></div>
-                <div className="einbindung-slider-passiv1"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="einbindung-slider-larrow finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="einbindung-slider-rarrow finger"
-              >
-                <Player
-                  id="one"
-                  src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
-                  loop
-                  speed="0.5"
-                  autoplay
-                  background="transparent"
-                  className="einbindung-slider-lottie-node"
-                ></Player>
-              </div>
-              <h1 className="">{props.heading}</h1>
-              <div className="einbindung-slider-container03">
-                <div className="einbindung-slider-container04">
-                  <img
-                    alt={props.imageAlt3}
-                    src={props.imageSrc3}
-                    className="einbindung-slider-image"
-                  />
-                  <span className="einbindung-slider-text1">{props.text}</span>
-                </div>
+          <div className="einbindung-slider-container02">
+            <div className="einbindung-slider-storyfortschrit">
+              <div className="einbindung-slider-activ"></div>
+              <div className="einbindung-slider-passiv"></div>
+              <div className="einbindung-slider-passiv1"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="einbindung-slider-larrow finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="einbindung-slider-rarrow finger"
+            >
+              <Player
+                id="one"
+                src="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/9e8648d5-9531-4645-8963-7d21b56f74f1/d18d188e-0ec7-4e8d-917d-68e21a473683"
+                loop
+                speed="0.5"
+                autoplay
+                background="transparent"
+                className="einbindung-slider-lottie-node"
+              ></Player>
+            </div>
+            <h1 className="">{props.heading}</h1>
+            <div className="einbindung-slider-container03">
+              <div className="einbindung-slider-container04">
+                <img
+                  alt={props.imageAlt3}
+                  src={props.imageSrc3}
+                  className="einbindung-slider-image"
+                />
+                <span className="einbindung-slider-text1">{props.text}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 2 && (
-            <div className="einbindung-slider-container05">
-              <div className="einbindung-slider-storyfortschrit1">
-                <div className="einbindung-slider-passiv2"></div>
-                <div className="einbindung-slider-activ1"></div>
-                <div className="einbindung-slider-passiv3"></div>
+          </div>
+          <div className="einbindung-slider-container05">
+            <div className="einbindung-slider-storyfortschrit1">
+              <div className="einbindung-slider-passiv2"></div>
+              <div className="einbindung-slider-activ1"></div>
+              <div className="einbindung-slider-passiv3"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="einbindung-slider-larrow1 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(3)}
+              className="einbindung-slider-rarrow1 finger"
+            ></div>
+            <h1 className="">{props.heading1}</h1>
+            <div className="einbindung-slider-container06">
+              <div className="einbindung-slider-container07">
+                <img
+                  alt={props.imageAlt31}
+                  src={props.imageSrc31}
+                  className="einbindung-slider-image1"
+                />
+                <span className="einbindung-slider-text3">{props.text1}</span>
               </div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="einbindung-slider-larrow1 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(3)}
-                className="einbindung-slider-rarrow1 finger"
-              ></div>
-              <h1 className="">{props.heading1}</h1>
-              <div className="einbindung-slider-container06">
-                <div className="einbindung-slider-container07">
-                  <img
-                    alt={props.imageAlt31}
-                    src={props.imageSrc31}
-                    className="einbindung-slider-image1"
-                  />
-                  <span className="einbindung-slider-text3">{props.text1}</span>
-                </div>
-                <EinbindungEx1
-                  rootClassName="einbindung-ex1-root-class-name1"
-                  className=""
-                ></EinbindungEx1>
+              <EinbindungEx1
+                rootClassName="einbindung-ex1-root-class-name1"
+                className=""
+              ></EinbindungEx1>
+            </div>
+          </div>
+          <div className="einbindung-slider-container08">
+            <div className="einbindung-slider-storyfortschrit2">
+              <div className="einbindung-slider-passiv4"></div>
+              <div className="einbindung-slider-passiv5"></div>
+              <div className="einbindung-slider-activ2"></div>
+            </div>
+            <div
+              onClick={() => setSlideNumber(2)}
+              className="einbindung-slider-larrow2 finger"
+            ></div>
+            <div
+              onClick={() => setSlideNumber(1)}
+              className="einbindung-slider-rarrow2 finger"
+            ></div>
+            <h1 className="">{props.heading11}</h1>
+            <div className="einbindung-slider-container09">
+              <div className="einbindung-slider-container10">
+                <img
+                  alt={props.imageAlt311}
+                  src={props.imageSrc311}
+                  className="einbindung-slider-image2"
+                />
+                <span className="einbindung-slider-text5">{props.text11}</span>
               </div>
             </div>
-          )}
-          {slideNumber === 3 && (
-            <div className="einbindung-slider-container08">
-              <div className="einbindung-slider-storyfortschrit2">
-                <div className="einbindung-slider-passiv4"></div>
-                <div className="einbindung-slider-passiv5"></div>
-                <div className="einbindung-slider-activ2"></div>
-              </div>
-              <div
-                onClick={() => setSlideNumber(2)}
-                className="einbindung-slider-larrow2 finger"
-              ></div>
-              <div
-                onClick={() => setSlideNumber(1)}
-                className="einbindung-slider-rarrow2 finger"
-              ></div>
-              <h1 className="">{props.heading11}</h1>
-              <div className="einbindung-slider-container09">
-                <div className="einbindung-slider-container10">
-                  <img
-                    alt={props.imageAlt311}
-                    src={props.imageSrc311}
-                    className="einbindung-slider-image2"
-                  />
-                  <span className="einbindung-slider-text5">
-                    {props.text11}
-                  </span>
-                </div>
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </div>
       <div className="">
